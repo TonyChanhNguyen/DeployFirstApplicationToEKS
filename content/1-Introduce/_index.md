@@ -68,7 +68,6 @@ Kubernetes is a portable, extensible, open source platform for managing containe
 Access to [Kubernetes docs](https://kubernetes.io/docs) for more detail.
 {{% /notice %}}
 
-
 ## Amazon EKS
 #### Overview
 Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that eliminates the need to install, operate, and maintain your own Kubernetes control plane on Amazon Web Services (AWS)
