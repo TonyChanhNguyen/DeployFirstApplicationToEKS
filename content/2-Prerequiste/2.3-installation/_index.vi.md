@@ -5,9 +5,9 @@ weight : 3
 chapter : false
 pre : " <b> 2.3 </b> "
 ---
-Trong bài thực hành này, chúng ta sẽ tạo một ứng dụng đơn giản với NodoJS và Express. Vì thế chúng ta cần kiểm tra phiên bản của chúng và tải xuống nếu chúng chưa được cài đặt.
+Trong bài thực hành này, chúng ta sẽ tạo một ứng dụng đơn giản với NodeJS và Express. Vì thế chúng ta cần kiểm tra phiên bản của chúng và tải xuống nếu chúng chưa được cài đặt.
 ### Nâng cấp awscli
-1. Sao chép và dán dòng lệnh dưới đây vào Terminal của Cloud9 Workspace để nâng cấp awscli.
+1. Sao chép và dán dòng lệnh dưới đây vào cửa sổ lệnh của Cloud9 Workspace để nâng cấp awscli.
 ```
 sudo pip install --upgrade awscli && hash -r
 ```
@@ -15,7 +15,7 @@ sudo pip install --upgrade awscli && hash -r
 
 
 ### Kiểm tra phiên bản của npm và node
-1. Sao chép và dán dòng lệnh dưới đây vào Terminal của Cloud9 Workspace để kiểm tra phiên bản của npm và node.
+1. Sao chép và dán dòng lệnh dưới đây vào cửa sổ lệnh của Cloud9 Workspace để kiểm tra phiên bản của npm và node.
 ```
 npm version
 ```
@@ -23,7 +23,7 @@ npm version
 Bạn có thể thấy, npm và node đã được cài đặt. Giờ chúng ta sẽ cài đặt Express framework bằng npm.
 
 ### Cài đặt Express framework
-1. Sao chép và dán dòng lệnh dưới đây vào Terminal của Cloud9 Workspace để cài đặt Express framework.
+1. Sao chép và dán dòng lệnh dưới đây vào cửa sổ lệnh của Cloud9 Workspace để cài đặt Express framework.
 ```
 npm install express --save
 ```

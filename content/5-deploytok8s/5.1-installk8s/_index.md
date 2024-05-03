@@ -13,7 +13,7 @@ Minikube is a lightweight Kubernetes (K8) installation, which can create a Virtu
 But to install kubectl and minikube on your workspace instance, its storage capacity must be redundant. So first, we need to expand the storage capacity of workspace instance.
 
 ### Expand storage capacity to 50GB.
-1. Go to EC2 instance of your workspace instance.
+1. Go to **EC2 instance** of your workspace instance.
 ![Install K8S](../../images/5.deployapptok8s/5.1.installkubectl/5.1.5.installkubectl.png?pc=90pt)
 
 2. Navigate to **Storage** tab.
@@ -21,7 +21,8 @@ But to install kubectl and minikube on your workspace instance, its storage capa
 ![Install K8S](../../images/5.deployapptok8s/5.1.installkubectl/5.1.6.installkubectl.png?pc=90pt)
 
 Your storage capacity now is 10GB. We will upgrade it to 50GB.
-4. Select your EBS volume.
+
+4. Select your **EBS volume**.
 5. Click on **Action**. Then select **Modify volume**.
 ![Install K8S](../../images/5.deployapptok8s/5.1.installkubectl/5.1.7.installkubectl.png?pc=90pt)
 6. Change from **10** to **50** at **Size (GiB)** field.

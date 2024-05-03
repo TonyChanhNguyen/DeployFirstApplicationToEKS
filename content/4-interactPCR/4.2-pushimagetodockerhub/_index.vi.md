@@ -12,7 +12,7 @@ docker images
 ```
 ![Đẩy Container Image](../../../images/4.dockerhub/4.2.pushimage/4.2.1.pushimage.png?pc=90pt)
 
-Như bạn có thể thấy, chúng ta chỉ có duy nhất **Repository** là **fcj-application**. Để đẩy container image lên repository, **Repository** của container image phải khớp với mẫu repository của DockerHub ```<YOUR_USER_NAME>/<YOUR_REPOSITORY_NAME>```. Vì thế chúng ta cần sử dụng câu lệnh ``docker image tag`` để sao chép và chuẩn hóa mẫu repository của container image trong máy chủ làm việc.
+Như bạn có thể thấy, chúng ta chỉ có duy nhất 1 image với **Repository** là **fcj-application**. Để đẩy container image lên repository, **Repository** của container image phải khớp với mẫu repository của DockerHub ```<YOUR_USER_NAME>/<YOUR_REPOSITORY_NAME>```. Vì thế chúng ta cần sử dụng câu lệnh ``docker image tag`` để sao chép và chuẩn hóa mẫu repository của container image trong máy chủ làm việc.
 
 2. Thực thi câu lệnh này để gắn nhãn cho container image.
 ```

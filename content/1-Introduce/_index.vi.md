@@ -14,7 +14,7 @@ Docker là một mã nguồn mở cho việc phát triển, di chuyển và tri�
 
 **The Docker client**: Docker client là cách chính để nhiều người dùng Docker tương tác với Docker. Khi bạn sử dụng dòng lệnh, client gửi những dòng lệnh đó đến Docker daemon để thực hiện chúng. Dòng lệnh Docker sử dụng Docker API. Docker client có thể giao tiếp với một hoặc nhiều Docker daemon.
 
-**Docker Desktop**: Docker Desktop là một ứng dụng dễ dàng cài đặt cho môi trường Mac, Windows hoặc Linux that enables you to build and share containerized applications and microservices. mà cho phép bạn xây dựng và chia sẻ các ứng dụng và microservice được đóng gói trong container.
+**Docker Desktop**: Docker Desktop là một ứng dụng dễ dàng cài đặt cho môi trường Mac, Windows hoặc Linux mà cho phép bạn xây dựng và chia sẻ các ứng dụng và microservice được đóng gói trong container.
 
 **Docker registries**: Docker registry chứa Docker images. Docker Hub là một công cộng mà mọi người có thể dùng, và Docker mặc định tìm kiếm images trên Docker Hub. 
 
@@ -41,6 +41,7 @@ Kubernetes là một nền tảng nguồn mở, có thể mở rộng, di độn
 **kube-api-server**: The API server là một thành phần của Kubernetes control plane mà hiển thị Kubernetes API. Máy chủ API là giao diện cho Kubernetes control plane.
 
 **etcd**: Bộ lưu trữ key-value nhất quán và khả dụng cao được sử dụng như kho lưu trữ hổ trợ Kubernetes cho tất cả dữ liệu của Cluster.
+
 **Scheduler**: Là thành phần của Control plane giám sát các Pod mới tạo chưa được chỉ định nào node nào, và sẽ chọn một node phù hợp để chúng triển khai trên.
 
 **Controller Manager**: Là thành phần của Control plane chạy các quy trình quản lý. Một cách hợp lý, mỗi bộ điều khiển sẽ là một quy trình riêng biệt nhưng để giảm sự phức tạp, chúng thường được biên dịch thành một tện nhị phân duy nhất để chạy trên một quy trình duy nhất. Có nhiều loại bộ điều khiển khác nhau. Một số ví dụ như:

@@ -5,9 +5,6 @@ weight : 1
 chapter : false
 pre : " <b> 4.1 </b> "
 ---
-
-Docker Hub is a container registry built for developers and open source contributors to find, use, and share their container images. With Hub, developers can host public repos that can be used for free, or private repos for teams and enterprises.
-
 1. Access to [DockerHub](https://www.docker.com/products/docker-hub/).
 2. Click on **Sign up** to registry account. Then log in to your account.
 

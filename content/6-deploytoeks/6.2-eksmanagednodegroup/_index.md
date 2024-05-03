@@ -45,7 +45,7 @@ There are 2 nodes listed in EKS Cluster.
 4. Let go to [EC2 Instance](https://ap-southeast-1.console.aws.amazon.com/ec2/home?region=ap-southeast-1#Instances:instanceState=running;tag:alpha.eksctl.io/nodegroup-name=my-fcj-node;v=3;$case=tags:true%5C,client:false;$regex=tags:false%5C,client:false) to see the instance associated to Node Group.
 ![Amazon EKS Managed NodeGroup](../../images/6.deployapptoeks/6.2.managednodegroup/6.2.5.managednodegroup.png?pc=90pt)
 
-There are 2 instances created (match with **--nodes=2** on **eksctl command**) with name is **my-fcj-cluster-my-fcj-node-Node** (format <Cluster-Name>-<NodeGroup-Name>-Node), type is **t3.micro** (match with **--node-type=t3.micro** on **eksctl command**) and Availability Zone is **ap-southeast-1a** and **ap-southeast-1b** (match with **--zones=ap-southeast-1a,ap-southeast-1b** on **eksctl command**).
+There are 2 instances created (match with **--nodes=2** on **eksctl command**) with name is **my-fcj-cluster-my-fcj-node-Node** (format `<Cluster-Name>-<NodeGroup-Name>-Node`), type is **t3.micro** (match with **--node-type=t3.micro** on **eksctl command**) and Availability Zone is **ap-southeast-1a** and **ap-southeast-1b** (match with **--zones=ap-southeast-1a,ap-southeast-1b** on **eksctl command**).
 
 
 ### Explore EKS Cluster

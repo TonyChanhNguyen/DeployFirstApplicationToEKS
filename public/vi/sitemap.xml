@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/vi/6-deploytoeks/6.1-installeks/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/6-deploytoeks/6.1-installeks/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/6-deploytoeks/6.1-installeks/"
+                />
+  </url><url>
+    <loc>/vi/5-deploytok8s/5.1-installk8s/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/5-deploytok8s/5.1-installk8s/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/5-deploytok8s/5.1-installk8s/"
+                />
+  </url><url>
+    <loc>/vi/3-deployappwithdocker/3.1-installdocker/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/3-deployappwithdocker/3.1-installdocker/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/3-deployappwithdocker/3.1-installdocker/"
+                />
+  </url><url>
     <loc>/vi/1-introduce/</loc>
     <xhtml:link
                 rel="alternate"
@@ -38,6 +74,18 @@
                 href="/vi/2-prerequiste/2.1-createcloud9workspace/"
                 />
   </url><url>
+    <loc>/vi/4-interactpcr/4.1-createdockerhubacc/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/4-interactpcr/4.1-createdockerhubacc/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/4-interactpcr/4.1-createdockerhubacc/"
+                />
+  </url><url>
     <loc>/vi/2-prerequiste/</loc>
     <xhtml:link
                 rel="alternate"
@@ -62,52 +110,40 @@
                 href="/vi/2-prerequiste/2.2-modifyiamrole/"
                 />
   </url><url>
-    <loc>/vi/2-prerequiste/2.3-installation/</loc>
+    <loc>/vi/6-deploytoeks/6.2-eksmanagednodegroup/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.3-installation/"
+                href="/6-deploytoeks/6.2-eksmanagednodegroup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.3-installation/"
+                href="/vi/6-deploytoeks/6.2-eksmanagednodegroup/"
                 />
   </url><url>
-    <loc>/vi/3-deployappwithdocker/</loc>
+    <loc>/vi/5-deploytok8s/5.2-deployk8simperative/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-deployappwithdocker/"
+                href="/5-deploytok8s/5.2-deployk8simperative/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-deployappwithdocker/"
+                href="/vi/5-deploytok8s/5.2-deployk8simperative/"
                 />
   </url><url>
-    <loc>/vi/2-prerequiste/2.4-createbasicapp/</loc>
+    <loc>/vi/5-deploytok8s/5.3-deployk8sdeclarative/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.4-createbasicapp/"
+                href="/5-deploytok8s/5.3-deployk8sdeclarative/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.4-createbasicapp/"
-                />
-  </url><url>
-    <loc>/vi/3-deployappwithdocker/3.1-installdocker/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/3-deployappwithdocker/3.1-installdocker/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/3-deployappwithdocker/3.1-installdocker/"
+                href="/vi/5-deploytok8s/5.3-deployk8sdeclarative/"
                 />
   </url><url>
     <loc>/vi/3-deployappwithdocker/3.2-createdockerfile/</loc>
@@ -122,6 +158,54 @@
                 href="/vi/3-deployappwithdocker/3.2-createdockerfile/"
                 />
   </url><url>
+    <loc>/vi/4-interactpcr/4.2-pushimagetodockerhub/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/4-interactpcr/4.2-pushimagetodockerhub/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/4-interactpcr/4.2-pushimagetodockerhub/"
+                />
+  </url><url>
+    <loc>/vi/2-prerequiste/2.3-installation/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/2-prerequiste/2.3-installation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/2-prerequiste/2.3-installation/"
+                />
+  </url><url>
+    <loc>/vi/4-interactpcr/4.3-pullimagefromdockerhub/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/4-interactpcr/4.3-pullimagefromdockerhub/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/4-interactpcr/4.3-pullimagefromdockerhub/"
+                />
+  </url><url>
+    <loc>/vi/3-deployappwithdocker/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/3-deployappwithdocker/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/3-deployappwithdocker/"
+                />
+  </url><url>
     <loc>/vi/3-deployappwithdocker/3.3-createdockerimage/</loc>
     <xhtml:link
                 rel="alternate"
@@ -132,6 +216,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="/vi/3-deployappwithdocker/3.3-createdockerimage/"
+                />
+  </url><url>
+    <loc>/vi/4-interactpcr/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/4-interactpcr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/4-interactpcr/"
                 />
   </url><url>
     <loc>/vi/3-deployappwithdocker/3.4-deployapp/</loc>
@@ -146,99 +242,19 @@
                 href="/vi/3-deployappwithdocker/3.4-deployapp/"
                 />
   </url><url>
-    <loc>/vi/4-interactpcr/4.1-createdockerhubacc/</loc>
-    <priority>0</priority>
+    <loc>/vi/2-prerequiste/2.4-createbasicapp/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-interactpcr/4.1-createdockerhubacc/"
+                href="/2-prerequiste/2.4-createbasicapp/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-interactpcr/4.1-createdockerhubacc/"
-                />
-  </url><url>
-    <loc>/vi/4-interactpcr/4.2-pushimagetodockerhub/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/4-interactpcr/4.2-pushimagetodockerhub/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/4-interactpcr/4.2-pushimagetodockerhub/"
-                />
-  </url><url>
-    <loc>/vi/4-interactpcr/4.3-pullimagefromdockerhub/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/4-interactpcr/4.3-pullimagefromdockerhub/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/4-interactpcr/4.3-pullimagefromdockerhub/"
-                />
-  </url><url>
-    <loc>/vi/4-interactpcr/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/4-interactpcr/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/4-interactpcr/"
-                />
-  </url><url>
-    <loc>/vi/5-deploytok8s/5.1-installk8s/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/5-deploytok8s/5.1-installk8s/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/5-deploytok8s/5.1-installk8s/"
-                />
-  </url><url>
-    <loc>/vi/5-deploytok8s/5.2-deployk8simperative/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/5-deploytok8s/5.2-deployk8simperative/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/5-deploytok8s/5.2-deployk8simperative/"
-                />
-  </url><url>
-    <loc>/vi/5-deploytok8s/5.3-deployk8sdeclarative/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/5-deploytok8s/5.3-deployk8sdeclarative/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/5-deploytok8s/5.3-deployk8sdeclarative/"
+                href="/vi/2-prerequiste/2.4-createbasicapp/"
                 />
   </url><url>
     <loc>/vi/5-deploytok8s/</loc>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -250,34 +266,7 @@
                 href="/vi/5-deploytok8s/"
                 />
   </url><url>
-    <loc>/vi/6-deploytoeks/6.1-installeks/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/6-deploytoeks/6.1-installeks/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/6-deploytoeks/6.1-installeks/"
-                />
-  </url><url>
-    <loc>/vi/6-deploytoeks/6.2-eksmanagednodegroup/</loc>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/6-deploytoeks/6.2-eksmanagednodegroup/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/6-deploytoeks/6.2-eksmanagednodegroup/"
-                />
-  </url><url>
     <loc>/vi/6-deploytoeks/</loc>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -290,7 +279,6 @@
                 />
   </url><url>
     <loc>/vi/7-cleanup/</loc>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

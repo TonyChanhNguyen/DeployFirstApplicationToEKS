@@ -12,21 +12,21 @@
     <title>Install Kubernetes tools :: Deploy first application on EKS</title>
 
     
-    <link href="/css/nucleus.css?1714703708" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1714703708" rel="stylesheet">
-    <link href="/css/hybrid.css?1714703708" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1714703708" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1714703708" rel="stylesheet">
-    <link href="/css/auto-complete.css?1714703708" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1714703708" rel="stylesheet">
-    <link href="/css/theme.css?1714703708" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1714703708" rel="stylesheet">
+    <link href="/css/nucleus.css?1714749797" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1714749797" rel="stylesheet">
+    <link href="/css/hybrid.css?1714749797" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1714749797" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1714749797" rel="stylesheet">
+    <link href="/css/auto-complete.css?1714749797" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1714749797" rel="stylesheet">
+    <link href="/css/theme.css?1714749797" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1714749797" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1714703708" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1714749797" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1714703708"></script>
+    <script src="/js/jquery-3.3.1.min.js?1714749797"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1714703708"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1714703708"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1714749797"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1714749797"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1714703708"></script>
+<script type="text/javascript" src="/js/search.js?1714749797"></script>
 
     
   </div>
@@ -905,7 +905,7 @@
             
           
           
-            <a href='/'>Deploy first application on EKS</a> > <a href='/5-deploytok8s/'>Deploy application with K8S</a> > Install Kubernetes tools
+            <a href='/'>Deploy first application on Amazon EKS</a> > <a href='/5-deploytok8s/'>Deploy application with K8S</a> > Install Kubernetes tools
           
         
           
@@ -952,13 +952,13 @@
 
 
 
-	<p>First, we need to install Kubernetes tool (Minikube) to your workspace machine. <strong>Minikube</strong> is a tool that lets you run a single-node Kubernetes cluster on your personal computer or in EC2 instance so that you can try out Kubernetes.</p>
-<p>Minikube is a lightweight Kubernetes (K8) installation, which can create a Virtual Machine (VM) on your local machine or in a cloud instance, which deploys a simple cluster containing only one node.</p>
+	<p>First, we need to install Kubernetes tool (Minikube) to your workspace instance. <strong>Minikube</strong> is a tool that lets you run a single-node Kubernetes cluster on your personal computer or in EC2 instance so that you can try out Kubernetes.</p>
+<p>Minikube is a lightweight Kubernetes (K8) installation, which can create a Virtual Machine (VM) on your local instance or in a cloud instance, which deploys a simple cluster containing only one node.</p>
 <p>But to install kubectl and minikube on your workspace instance, its storage capacity must be redundant. So first, we need to expand the storage capacity of workspace instance.</p>
 <h3 id="expand-storage-capacity-to-50gb">Expand storage capacity to 50GB.</h3>
 <ol>
 <li>
-<p>Go to EC2 instance of your workspace machine.
+<p>Go to <strong>EC2 instance</strong> of your workspace instance.
 <img src="../../images/5.deployapptok8s/5.1.installkubectl/5.1.5.installkubectl.png?pc=90pt" alt="Install K8S"></p>
 </li>
 <li>
@@ -970,7 +970,7 @@
 </li>
 </ol>
 <p>Your storage capacity now is 10GB. We will upgrade it to 50GB.
-4. Select your EBS volume.
+4. Select your <strong>EBS volume</strong>.
 5. Click on <strong>Action</strong>. Then select <strong>Modify volume</strong>.
 <img src="../../images/5.deployapptok8s/5.1.installkubectl/5.1.7.installkubectl.png?pc=90pt" alt="Install K8S">
 6. Change from <strong>10</strong> to <strong>50</strong> at <strong>Size (GiB)</strong> field.
@@ -982,16 +982,16 @@
 <img src="../../images/5.deployapptok8s/5.1.installkubectl/5.1.9.installkubectl.png?pc=90pt" alt="Install K8S"></p>
 </li>
 <li>
-<p>Go back to Cloud9 terminal, execute the below command to reboot your workspace machine.</p>
+<p>Go back to Cloud9 terminal, execute the below command to reboot your workspace instance.</p>
 </li>
 </ol>
 <pre tabindex="0"><code>sudo reboot
 </code></pre><p><img src="../../images/5.deployapptok8s/5.1.installkubectl/5.1.10.installkubectl.png?pc=90pt" alt="Install K8S"></p>
 <ol start="10">
-<li>After workspace machine reboot successfully. Check the result.</li>
+<li>After workspace instance reboot successfully. Check the result.</li>
 </ol>
 <pre tabindex="0"><code>df -h
-</code></pre><p>There is a volume mounted to your workspace machine with capacity is 43GB.
+</code></pre><p>There is a volume mounted to your workspace instance with capacity is 43GB.
 <img src="../../images/5.deployapptok8s/5.1.installkubectl/5.1.11.installkubectl.png?pc=90pt" alt="Install K8S"></p>
 <h3 id="install-kubectl">Install kubectl</h3>
 <ol>
@@ -1469,19 +1469,19 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube &amp;&amp; rm minikube
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1714703708"></script>
-    <script src="/js/perfect-scrollbar.min.js?1714703708"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1714703708"></script>
-    <script src="/js/jquery.sticky.js?1714703708"></script>
-    <script src="/js/featherlight.min.js?1714703708"></script>
-    <script src="/js/highlight.pack.js?1714703708"></script>
+    <script src="/js/clipboard.min.js?1714749797"></script>
+    <script src="/js/perfect-scrollbar.min.js?1714749797"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1714749797"></script>
+    <script src="/js/jquery.sticky.js?1714749797"></script>
+    <script src="/js/featherlight.min.js?1714749797"></script>
+    <script src="/js/highlight.pack.js?1714749797"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1714703708"></script>
-    <script src="/js/learn.js?1714703708"></script>
-    <script src="/js/hugo-learn.js?1714703708"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1714749797"></script>
+    <script src="/js/learn.js?1714749797"></script>
+    <script src="/js/hugo-learn.js?1714749797"></script>
 
-    <link href="/mermaid/mermaid.css?1714703708" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1714703708"></script>
+    <link href="/mermaid/mermaid.css?1714749797" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1714749797"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

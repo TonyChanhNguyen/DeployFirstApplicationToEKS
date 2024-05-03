@@ -9,7 +9,7 @@ pre : " <b> 3.1 </b> "
 Ở bước này, chúng ta sẽ kiểm tra phiên bản của Docker và cài đặt nếu nó không tồn tại.
 
 ### Kiểm tra phiên bản của Docker
-1. Tại Cloud9 terminal, thực hiện dòng lệnh này để kiểm tra phiên bản của Docker.
+1. Tại cửa sổ lệnh Cloud9, thực hiện dòng lệnh này để kiểm tra phiên bản của Docker.
 ```
 docker version
 ```

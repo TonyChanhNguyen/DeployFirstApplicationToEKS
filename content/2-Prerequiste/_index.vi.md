@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 2. </b> "
 ---
 ### Tổng quan
-Để tiên hành bài lab này, chúng ta phải chuẩn bị một máy chủ làm việc Cloud9 và tạo IAM Role cho máy chủ đó.
+Để tiến hành bài lab này, chúng ta phải chuẩn bị một máy chủ làm việc Cloud9 và tạo IAM Role cho máy chủ đó.
 
 ### Nội dung
 + 2.1 [Tạo môi trường Cloud9](2.1-createcloud9workspace/)

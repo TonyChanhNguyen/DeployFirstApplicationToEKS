@@ -60,6 +60,7 @@ node index.js
 ![Create basic application](../../images/2.prerequisites/2.4.createapp/2.4.4.createapp.png?pc=60pt)
 
 Now, we need to access to application to see the result.
+
 12. Click on **Share**.
 13. Copy the **IP Address** at **Application** field.
 ![Create basic application](../../images/2.prerequisites/2.4.createapp/2.4.5.createapp.png?pc=60pt)
@@ -79,6 +80,7 @@ The reason is the security group of workspace instance is still not opened for p
 ![Create basic application](../../images/2.prerequisites/2.4.createapp/2.4.8.createapp.png?pc=60pt)
 
 At **Inbound rules** interface, you can see there are no rules were defined.
+
 20. Click on **Edit inbound rules**.
 ![Create basic application](../../images/2.prerequisites/2.4.createapp/2.4.9.createapp.png?pc=60pt)
 21. At **Edit inbound rules** interface, click on **Add rule**.

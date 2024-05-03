@@ -12,21 +12,21 @@
     <title>Deploy application to EKS Cluster Managed Nodegroup :: Deploy first application on EKS</title>
 
     
-    <link href="/css/nucleus.css?1714703708" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1714703708" rel="stylesheet">
-    <link href="/css/hybrid.css?1714703708" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1714703708" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1714703708" rel="stylesheet">
-    <link href="/css/auto-complete.css?1714703708" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1714703708" rel="stylesheet">
-    <link href="/css/theme.css?1714703708" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1714703708" rel="stylesheet">
+    <link href="/css/nucleus.css?1714749797" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1714749797" rel="stylesheet">
+    <link href="/css/hybrid.css?1714749797" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1714749797" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1714749797" rel="stylesheet">
+    <link href="/css/auto-complete.css?1714749797" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1714749797" rel="stylesheet">
+    <link href="/css/theme.css?1714749797" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1714749797" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1714703708" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1714749797" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1714703708"></script>
+    <script src="/js/jquery-3.3.1.min.js?1714749797"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1714703708"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1714703708"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1714749797"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1714749797"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1714703708"></script>
+<script type="text/javascript" src="/js/search.js?1714749797"></script>
 
     
   </div>
@@ -905,7 +905,7 @@
             
           
           
-            <a href='/'>Deploy first application on EKS</a> > <a href='/6-deploytoeks/'>Deploy application to EKS Cluster</a> > Deploy application to EKS Cluster Managed Nodegroup
+            <a href='/'>Deploy first application on Amazon EKS</a> > <a href='/6-deploytoeks/'>Deploy application to EKS Cluster</a> > Deploy application to EKS Cluster Managed Nodegroup
           
         
           
@@ -953,7 +953,21 @@
 
 
 
-	<h3 id="create-eks-cluster">Create EKS Cluster</h3>
+	<p>A Kubernetes node is a machine that runs containerized applications. Each node has the following components:</p>
+<ul>
+<li><strong>Container runtime</strong> – Software that&rsquo;s responsible for running the containers.</li>
+<li><strong>kubelet</strong> – Makes sure that containers are healthy and running within their associated Pod.</li>
+<li><strong>kube-proxy</strong> – Maintains network rules that allow communication to your Pods.</li>
+</ul>
+<p>Your Amazon EKS cluster can schedule Pods on any combination of:</p>
+<ul>
+<li><strong>AWS Fargate</strong>: Fargate is a serverless compute engine for containers that eliminates the need to manage the underlying instances. With Fargate, you specify your application&rsquo;s resource needs, and AWS automatically provisions, scales, and maintains the infrastructure. This option is ideal for users who prioritize ease-of-use and want to concentrate on application development and deployment rather than managing infrastructure.</li>
+<li><strong>Karpenter</strong>: Karpenter is a flexible, high-performance Kubernetes cluster autoscaler that helps improve application availability and cluster efficiency. Karpenter launches right-sized compute resources in response to changing application load. This option can provision just-in-time compute resources that meet the requirements of your workload.</li>
+<li><strong>Managed node groups</strong>: Managed node groups are a blend of automation and customization for managing a collection of Amazon EC2 instances within an Amazon EKS cluster. AWS takes care of tasks like patching, updating, and scaling nodes, easing operational aspects. In parallel, custom kubelet arguments are supported, opening up possibilities for advanced CPU and memory management policies. Moreover, they enhance security via AWS Identity and Access Management (IAM) roles for service accounts, while curbing the need for separate permissions per cluster.</li>
+<li><strong>Self-managed nodes</strong>: Self-managed nodes offer full control over your Amazon EC2 instances within an Amazon EKS cluster. You are in charge of managing, scaling, and maintaining the nodes, giving you total control over the underlying infrastructure. This option is suitable for users who need granular control and customization of their nodes and are ready to invest time in managing and maintaining their infrastructure.cheduled on. Amazon EKS nodes run in your AWS account and connect to the control plane of your cluster through the cluster API server endpoint.</li>
+</ul>
+<p><strong>But in this workshop, we will only focus on deploying application to EKS Cluster Managed Nodegroup.</strong></p>
+<h3 id="create-eks-cluster">Create EKS Cluster</h3>
 <ol>
 <li>At Cloud9 terminal, execute command below to create EKS Cluster.</li>
 </ol>
@@ -1471,19 +1485,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1714703708"></script>
-    <script src="/js/perfect-scrollbar.min.js?1714703708"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1714703708"></script>
-    <script src="/js/jquery.sticky.js?1714703708"></script>
-    <script src="/js/featherlight.min.js?1714703708"></script>
-    <script src="/js/highlight.pack.js?1714703708"></script>
+    <script src="/js/clipboard.min.js?1714749797"></script>
+    <script src="/js/perfect-scrollbar.min.js?1714749797"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1714749797"></script>
+    <script src="/js/jquery.sticky.js?1714749797"></script>
+    <script src="/js/featherlight.min.js?1714749797"></script>
+    <script src="/js/highlight.pack.js?1714749797"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1714703708"></script>
-    <script src="/js/learn.js?1714703708"></script>
-    <script src="/js/hugo-learn.js?1714703708"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1714749797"></script>
+    <script src="/js/learn.js?1714749797"></script>
+    <script src="/js/hugo-learn.js?1714749797"></script>
 
-    <link href="/mermaid/mermaid.css?1714703708" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1714703708"></script>
+    <link href="/mermaid/mermaid.css?1714749797" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1714749797"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

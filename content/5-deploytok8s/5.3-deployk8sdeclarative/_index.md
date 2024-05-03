@@ -5,6 +5,7 @@ weight : 2
 chapter : false
 pre : " <b> 5.2 </b> "
 ---
+In previous step, we will deploy the application on Kubernetes Deployment by imperative way. In this step, we will deploy the application on Kubernetes Deployment by declarative way.
 1. Create a directory named **kube-manifest**.
 ```
 mkdir kube-manifest

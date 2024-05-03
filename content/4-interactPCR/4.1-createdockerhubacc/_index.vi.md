@@ -40,7 +40,7 @@ Kế tiếp, chúng ta sẽ tạo Access Token được sử dụng để đăng
 
 ![Tạo tài khoản DockerHub](../../../images/4.dockerhub/4.1.createaccount/4.1.7.createaccount.png?pc=90pt)
 
-15. Trở lại terminal của Cloud9. Nhập command này để đăng nhập và cung cấp access token khi được yêu cầu.
+15. Trở lại cửa sổ lệnh của Cloud9. Nhập câu lệnh này để đăng nhập và cung cấp access token khi được yêu cầu.
 ```
 docker login -u <REPLACE-YOUR-DOCKERHUB-USERNAME>
 ```

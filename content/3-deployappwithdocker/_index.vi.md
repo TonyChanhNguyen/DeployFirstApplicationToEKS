@@ -14,7 +14,7 @@ Docker là một mã nguồn mở cho việc phát triển, di chuyển và tri�
 
 **The Docker client**: Docker client là cách chính để nhiều người dùng Docker tương tác với Docker. Khi bạn sử dụng dòng lệnh, client gửi những dòng lệnh đó đến Docker daemon để thực hiện chúng. Dòng lệnh Docker sử dụng Docker API. Docker client có thể giao tiếp với một hoặc nhiều Docker daemon.
 
-**Docker Desktop**: Docker Desktop là một ứng dụng dễ dàng cài đặt cho môi trường Mac, Windows hoặc Linux that enables you to build and share containerized applications and microservices. mà cho phép bạn xây dựng và chia sẻ các ứng dụng và microservice được đóng gói trong container.
+**Docker Desktop**: Docker Desktop là một ứng dụng dễ dàng cài đặt cho môi trường Mac, Windows hoặc Linux mà cho phép bạn xây dựng và chia sẻ các ứng dụng và microservice được đóng gói trong container.
 
 **Docker registries**: Docker registry chứa Docker images. Docker Hub là một công cộng mà mọi người có thể dùng, và Docker mặc định tìm kiếm images trên Docker Hub. 
 

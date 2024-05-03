@@ -7,7 +7,7 @@ pre : " <b> 2.4 </b> "
 ---
 Ở bước này, chúng ta sẽ tạo một ứng dụng đơn giản sử dụng NodeJS và Express framework.
 
-1. Tại Cloud9 terminal, nhập dòng lệnh bên dưới để tạo thư mục cho ứng dụng.
+1. Tại cửa sổ lệnh Cloud9, nhập dòng lệnh bên dưới để tạo thư mục cho ứng dụng.
 ```
 mkdir app
 cd app
@@ -60,6 +60,7 @@ node index.js
 ![Create basic application](../../../images/2.prerequisites/2.4.createapp/2.4.4.createapp.png?pc=60pt)
 
 Bây giờ, chúng ta cần truy cập vào ứng dụng để thấy kết quả.
+
 12. Nhấn **Share**.
 13. Sao chép **IP Address** ở mục **Application**.
 ![Create basic application](../../../images/2.prerequisites/2.4.createapp/2.4.5.createapp.png?pc=60pt)
@@ -68,7 +69,8 @@ Bây giờ, chúng ta cần truy cập vào ứng dụng để thấy kết qu�
 15. Ứng dụng của bạn không thể truy cập.
 ![Create basic application](../../../images/2.prerequisites/2.4.createapp/2.4.6.createapp.png?pc=60pt)
 
-Nguyên nhân và bởi vì security group của máy chủ làm việc vẫn chưa mở cổng 8080
+Nguyên nhân và bởi vì security group của máy chủ làm việc vẫn chưa mở cổng 8080.
+
 16. Nhấn vào biểu tượng **R** và chọn **Manage EC2 Instance** để trở lại máy chủ làm việc.
 ![Create basic application](../../../images/2.prerequisites/2.4.createapp/2.4.7.createapp.png?pc=60pt)
 
@@ -78,6 +80,7 @@ Nguyên nhân và bởi vì security group của máy chủ làm việc vẫn ch
 ![Create basic application](../../../images/2.prerequisites/2.4.createapp/2.4.8.createapp.png?pc=60pt)
 
 Tại trang **Inbound rules**, bạn có thể thấy chưa có quy tắc nào được định nghĩa.
+
 20. Nhấn **Edit inbound rules**.
 ![Create basic application](../../../images/2.prerequisites/2.4.createapp/2.4.9.createapp.png?pc=60pt)
 21. Tại trang **Edit inbound rules**, nhấn **Add rule**.

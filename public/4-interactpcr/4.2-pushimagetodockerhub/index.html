@@ -12,21 +12,21 @@
     <title>Push image to DockerHub :: Deploy first application on EKS</title>
 
     
-    <link href="/css/nucleus.css?1714703708" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1714703708" rel="stylesheet">
-    <link href="/css/hybrid.css?1714703708" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1714703708" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1714703708" rel="stylesheet">
-    <link href="/css/auto-complete.css?1714703708" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1714703708" rel="stylesheet">
-    <link href="/css/theme.css?1714703708" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1714703708" rel="stylesheet">
+    <link href="/css/nucleus.css?1714749797" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1714749797" rel="stylesheet">
+    <link href="/css/hybrid.css?1714749797" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1714749797" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1714749797" rel="stylesheet">
+    <link href="/css/auto-complete.css?1714749797" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1714749797" rel="stylesheet">
+    <link href="/css/theme.css?1714749797" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1714749797" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1714703708" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1714749797" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1714703708"></script>
+    <script src="/js/jquery-3.3.1.min.js?1714749797"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1714703708"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1714703708"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1714749797"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1714749797"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1714703708"></script>
+<script type="text/javascript" src="/js/search.js?1714749797"></script>
 
     
   </div>
@@ -905,7 +905,7 @@
             
           
           
-            <a href='/'>Deploy first application on EKS</a> > <a href='/4-interactpcr/'>Interact with Public Container Registry</a> > Push image to DockerHub
+            <a href='/'>Deploy first application on Amazon EKS</a> > <a href='/4-interactpcr/'>Interact with Public Container Registry</a> > Push image to DockerHub
           
         
           
@@ -944,17 +944,17 @@
 
 	<p>In previous step, we created DockerHub account, public repository and login successfully. Now, we will perform to push container image to created repository.</p>
 <ol>
-<li>Let list the container images in workspace machine again.</li>
+<li>Let list the container images in workspace instance again.</li>
 </ol>
 <pre tabindex="0"><code>docker images
 </code></pre><p><img src="../../images/4.dockerhub/4.2.pushimage/4.2.1.pushimage.png?pc=90pt" alt="Push Container Image"></p>
-<p>At you can see, we had only 1 image with <strong>Repository</strong> is <strong>fcj-application</strong>. To push container image to repository, <strong>Repository</strong> of your container image must match with repository format of DockerHub <code>&lt;YOUR_USER_NAME&gt;/&lt;YOUR_REPOSITORY_NAME&gt;</code>. So now we need to use <code>docker image tag</code> command to copy and correct repository format of your container image in workspace machine.</p>
+<p>At you can see, we had only 1 image with <strong>Repository</strong> is <strong>fcj-application</strong>. To push container image to repository, <strong>Repository</strong> of your container image must match with repository format of DockerHub <code>&lt;YOUR_USER_NAME&gt;/&lt;YOUR_REPOSITORY_NAME&gt;</code>. So now we need to use <code>docker image tag</code> command to copy and correct repository format of your container image in workspace instance.</p>
 <ol start="2">
 <li>Execute this command to tag your container image.</li>
 </ol>
 <pre tabindex="0"><code>docker image tag fcj-application:v1 firstcloudjourneypcr/mybasicapp:v1
 </code></pre><ol start="3">
-<li>Then, let list container images in workspace machine again to see the result.</li>
+<li>Then, let list container images in workspace instance again to see the result.</li>
 </ol>
 <pre tabindex="0"><code>docker images
 </code></pre><p><img src="../../images/4.dockerhub/4.2.pushimage/4.2.2.pushimage.png?pc=90pt" alt="Push Container Image"></p>
@@ -1415,19 +1415,19 @@ Next, let push this container image to DockerHub.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1714703708"></script>
-    <script src="/js/perfect-scrollbar.min.js?1714703708"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1714703708"></script>
-    <script src="/js/jquery.sticky.js?1714703708"></script>
-    <script src="/js/featherlight.min.js?1714703708"></script>
-    <script src="/js/highlight.pack.js?1714703708"></script>
+    <script src="/js/clipboard.min.js?1714749797"></script>
+    <script src="/js/perfect-scrollbar.min.js?1714749797"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1714749797"></script>
+    <script src="/js/jquery.sticky.js?1714749797"></script>
+    <script src="/js/featherlight.min.js?1714749797"></script>
+    <script src="/js/highlight.pack.js?1714749797"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1714703708"></script>
-    <script src="/js/learn.js?1714703708"></script>
-    <script src="/js/hugo-learn.js?1714703708"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1714749797"></script>
+    <script src="/js/learn.js?1714749797"></script>
+    <script src="/js/hugo-learn.js?1714749797"></script>
 
-    <link href="/mermaid/mermaid.css?1714703708" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1714703708"></script>
+    <link href="/mermaid/mermaid.css?1714749797" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1714749797"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

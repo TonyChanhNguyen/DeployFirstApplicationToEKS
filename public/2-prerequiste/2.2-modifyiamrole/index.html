@@ -12,21 +12,21 @@
     <title>Modify IAM role :: Deploy first application on EKS</title>
 
     
-    <link href="/css/nucleus.css?1714703708" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1714703708" rel="stylesheet">
-    <link href="/css/hybrid.css?1714703708" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1714703708" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1714703708" rel="stylesheet">
-    <link href="/css/auto-complete.css?1714703708" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1714703708" rel="stylesheet">
-    <link href="/css/theme.css?1714703708" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1714703708" rel="stylesheet">
+    <link href="/css/nucleus.css?1714749797" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1714749797" rel="stylesheet">
+    <link href="/css/hybrid.css?1714749797" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1714749797" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1714749797" rel="stylesheet">
+    <link href="/css/auto-complete.css?1714749797" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1714749797" rel="stylesheet">
+    <link href="/css/theme.css?1714749797" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1714749797" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1714703708" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1714749797" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1714703708"></script>
+    <script src="/js/jquery-3.3.1.min.js?1714749797"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1714703708"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1714703708"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1714749797"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1714749797"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1714703708"></script>
+<script type="text/javascript" src="/js/search.js?1714749797"></script>
 
     
   </div>
@@ -905,7 +905,7 @@
             
           
           
-            <a href='/'>Deploy first application on EKS</a> > <a href='/2-prerequiste/'>Prerequisites</a> > Modify IAM role
+            <a href='/'>Deploy first application on Amazon EKS</a> > <a href='/2-prerequiste/'>Prerequisites</a> > Modify IAM role
           
         
           
@@ -963,41 +963,41 @@
 </li>
 <li>
 <p>Click on <strong>Create role</strong>.
-<img src="../../images/2.prerequisites/2.2.iamrole/2.2.1.iamrole.png?pc=60pt" alt="Create IAM role"></p>
+<img src="../../images/2.prerequisites/2.2.iamrole/2.2.1.iamrole.png?pc=90pt" alt="Create IAM role"></p>
 </li>
 <li>
 <p>At <strong>Trusted entity type</strong> field, select <strong>AWS service</strong>.</p>
 </li>
 <li>
 <p>At <strong>Service or use case</strong> field, select <strong>EC2</strong>.
-<img src="../../images/2.prerequisites/2.2.iamrole/2.2.2.iamrole.png?pc=60pt" alt="Create IAM role"></p>
+<img src="../../images/2.prerequisites/2.2.iamrole/2.2.2.iamrole.png?pc=90pt" alt="Create IAM role"></p>
 </li>
 <li>
 <p>Then, click on <strong>Next</strong>.
-<img src="../../images/2.prerequisites/2.2.iamrole/2.2.3.iamrole.png?pc=60pt" alt="Create IAM role"></p>
+<img src="../../images/2.prerequisites/2.2.iamrole/2.2.3.iamrole.png?pc=90pt" alt="Create IAM role"></p>
 </li>
 <li>
 <p>At <strong>Permissions policies</strong> field, select policy name <strong>AdministratorAccess</strong>.
-<img src="../../images/2.prerequisites/2.2.iamrole/2.2.4.iamrole.png?pc=60pt" alt="Create IAM role"></p>
+<img src="../../images/2.prerequisites/2.2.iamrole/2.2.4.iamrole.png?pc=90pt" alt="Create IAM role"></p>
 </li>
 <li>
 <p>Then, click on <strong>Next</strong>.
-<img src="../../images/2.prerequisites/2.2.iamrole/2.2.5.iamrole.png?pc=60pt" alt="Create IAM role"></p>
+<img src="../../images/2.prerequisites/2.2.iamrole/2.2.5.iamrole.png?pc=90pt" alt="Create IAM role"></p>
 </li>
 <li>
 <p>At <strong>Name, review, and create</strong> page, input <code>eksworkspace-administrator</code> at <strong>Role name</strong> field.
-<img src="../../images/2.prerequisites/2.2.iamrole/2.2.6.iamrole.png?pc=60pt" alt="Create IAM role"></p>
+<img src="../../images/2.prerequisites/2.2.iamrole/2.2.6.iamrole.png?pc=90pt" alt="Create IAM role"></p>
 </li>
 <li>
 <p>Then, scroll down to the end of page and click on <strong>Create role</strong>.
-<img src="../../images/2.prerequisites/2.2.iamrole/2.2.7.iamrole.png?pc=60pt" alt="Create IAM role"></p>
+<img src="../../images/2.prerequisites/2.2.iamrole/2.2.7.iamrole.png?pc=90pt" alt="Create IAM role"></p>
 </li>
 </ol>
 <h3 id="assign-role-to-workspace-instance">Assign role to workspace instance</h3>
 <ol>
 <li>
 <p>At <strong>AWS Cloud9</strong> interface, click on <strong>Manage EC2 instance</strong>.
-<img src="../../images/2.prerequisites/2.2.iamrole/2.2.8.iamrole.png?pc=60pt" alt="Create IAM role"></p>
+<img src="../../images/2.prerequisites/2.2.iamrole/2.2.8.iamrole.png?pc=90pt" alt="Create IAM role"></p>
 </li>
 <li>
 <p>You will see the created workspace instance. Then, click to select it.</p>
@@ -1010,18 +1010,18 @@
 </li>
 <li>
 <p>Click on <strong>Modify IAM role</strong>.
-<img src="../../images/2.prerequisites/2.2.iamrole/2.2.9.iamrole.png?pc=60pt" alt="Create IAM role"></p>
+<img src="../../images/2.prerequisites/2.2.iamrole/2.2.9.iamrole.png?pc=90pt" alt="Create IAM role"></p>
 </li>
 <li>
 <p>Select the role name <strong>eksworkspace-administrator</strong> which was created at above steps.</p>
 </li>
 <li>
 <p>Then, click on <strong>Update IAM role</strong>.
-<img src="../../images/2.prerequisites/2.2.iamrole/2.2.10.iamrole.png?pc=60pt" alt="Create IAM role"></p>
+<img src="../../images/2.prerequisites/2.2.iamrole/2.2.10.iamrole.png?pc=90pt" alt="Create IAM role"></p>
 </li>
 <li>
 <p>New IAM role was updated successfully.
-<img src="../../images/2.prerequisites/2.2.iamrole/2.2.11.iamrole.png?pc=60pt" alt="Create IAM role"></p>
+<img src="../../images/2.prerequisites/2.2.iamrole/2.2.11.iamrole.png?pc=90pt" alt="Create IAM role"></p>
 </li>
 </ol>
 <h3 id="update-cloud9-configuration">Update Cloud9 configuration</h3>
@@ -1035,18 +1035,18 @@
 </li>
 <li>
 <p>Select <strong>Preferences</strong>.
-<img src="../../images/2.prerequisites/2.2.iamrole/2.2.12.iamrole.png?pc=60pt" alt="Create IAM role"></p>
+<img src="../../images/2.prerequisites/2.2.iamrole/2.2.12.iamrole.png?pc=90pt" alt="Create IAM role"></p>
 </li>
 <li>
 <p>At <strong>AWS Settings</strong>, disable <strong>AWS managed temporary credentials</strong>.
-<img src="../../images/2.prerequisites/2.2.iamrole/2.2.13.iamrole.png?pc=60pt" alt="Create IAM role"></p>
+<img src="../../images/2.prerequisites/2.2.iamrole/2.2.13.iamrole.png?pc=90pt" alt="Create IAM role"></p>
 </li>
 <li>
 <p>To ensure that temporary credentials are not saved in <strong>Cloud9</strong>, we will delete all existing credentials with the command below.</p>
 </li>
 </ol>
 <pre tabindex="0"><code>rm -vf ${HOME}/.aws/credentials
-</code></pre><p><img src="../../images/2.prerequisites/2.2.iamrole/2.2.14.iamrole.png?pc=60pt" alt="Create IAM role"></p>
+</code></pre><p><img src="../../images/2.prerequisites/2.2.iamrole/2.2.14.iamrole.png?pc=90pt" alt="Create IAM role"></p>
 
 
 
@@ -1493,19 +1493,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1714703708"></script>
-    <script src="/js/perfect-scrollbar.min.js?1714703708"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1714703708"></script>
-    <script src="/js/jquery.sticky.js?1714703708"></script>
-    <script src="/js/featherlight.min.js?1714703708"></script>
-    <script src="/js/highlight.pack.js?1714703708"></script>
+    <script src="/js/clipboard.min.js?1714749797"></script>
+    <script src="/js/perfect-scrollbar.min.js?1714749797"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1714749797"></script>
+    <script src="/js/jquery.sticky.js?1714749797"></script>
+    <script src="/js/featherlight.min.js?1714749797"></script>
+    <script src="/js/highlight.pack.js?1714749797"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1714703708"></script>
-    <script src="/js/learn.js?1714703708"></script>
-    <script src="/js/hugo-learn.js?1714703708"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1714749797"></script>
+    <script src="/js/learn.js?1714749797"></script>
+    <script src="/js/hugo-learn.js?1714749797"></script>
 
-    <link href="/mermaid/mermaid.css?1714703708" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1714703708"></script>
+    <link href="/mermaid/mermaid.css?1714749797" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1714749797"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

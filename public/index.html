@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Deploy first application on EKS :: Deploy first application on EKS</title>
+    <title>Deploy first application on Amazon EKS :: Deploy first application on EKS</title>
 
     
-    <link href="/css/nucleus.css?1714703708" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1714703708" rel="stylesheet">
-    <link href="/css/hybrid.css?1714703708" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1714703708" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1714703708" rel="stylesheet">
-    <link href="/css/auto-complete.css?1714703708" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1714703708" rel="stylesheet">
-    <link href="/css/theme.css?1714703708" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1714703708" rel="stylesheet">
+    <link href="/css/nucleus.css?1714749797" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1714749797" rel="stylesheet">
+    <link href="/css/hybrid.css?1714749797" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1714749797" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1714749797" rel="stylesheet">
+    <link href="/css/auto-complete.css?1714749797" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1714749797" rel="stylesheet">
+    <link href="/css/theme.css?1714749797" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1714749797" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1714703708" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1714749797" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1714703708"></script>
+    <script src="/js/jquery-3.3.1.min.js?1714749797"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1714703708"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1714703708"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1714749797"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1714749797"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1714703708"></script>
+<script type="text/javascript" src="/js/search.js?1714749797"></script>
 
     
   </div>
@@ -892,51 +892,50 @@
 </span>
 
  
-<h1 id="deploy-first-application-on-eks">Deploy first application on EKS</h1>
+<h1 id="deploy-first-application-on-amazon-eks">Deploy first application on Amazon EKS</h1>
 <h3 id="overview">Overview</h3>
 <p>In this hands-on lab, we will learn fundamental knowledge and how can deploy a basic application on Docker, Kubernetes and Amazon EKS.</p>
 <p><img src="images/DockerK8SEKS.png?pc=90pt" alt="DockerandK8SandEKS"></p>
 <h3 id="content">Content</h3>
 <ol>
 <li><a href="1-introduce/">Introduction</a></li>
-<li><a href="2-Prerequiste/">Prerequisites</a>
+<li><a href="2-prerequiste/">Prerequisites</a>
 <ul>
-<li>2.1 <a href="">Create Cloud9 workspace</a></li>
-<li>2.2 <a href="">Modify IAM Role</a></li>
-<li>2.3 <a href="">Installation</a></li>
-<li>2.4 <a href="">Create basic application</a></li>
+<li>2.1 <a href="2-prerequiste/2.1-createcloud9workspace/">Create Cloud9 workspace</a></li>
+<li>2.2 <a href="2-prerequiste/2.2-modifyiamrole/">Modify IAM Role</a></li>
+<li>2.3 <a href="2-prerequiste/2.3-installation/">Installation</a></li>
+<li>2.4 <a href="2-prerequiste/2.4-createbasicapp/">Create basic application</a></li>
 </ul>
 </li>
-<li><a href="">Deploy application with Docker</a>
+<li><a href="3-deployappwithdocker/">Deploy application with Docker</a>
 <ul>
-<li>3.1 <a href="">Install Docker</a></li>
-<li>3.2 <a href="">Create Dockerfile</a></li>
-<li>3.3 <a href="">Create container image</a></li>
-<li>3.4 <a href="">Deploy application</a></li>
+<li>3.1 <a href="3-deployappwithdocker/3.1-installdocker/">Install Docker</a></li>
+<li>3.2 <a href="3-deployappwithdocker/3.2-createdockerfile/">Create Dockerfile</a></li>
+<li>3.3 <a href="3-deployappwithdocker/3.3-createdockerimage/">Create container image</a></li>
+<li>3.4 <a href="3-deployappwithdocker/3.4-deployapp/">Deploy application</a></li>
 </ul>
 </li>
-<li><a href="">Interact with Public Container Registry</a>
+<li><a href="4-interactpcr/">Interact with Public Container Registry</a>
 <ul>
-<li>4.1 <a href="">Create DockerHub account</a></li>
-<li>4.2 <a href="">Push container image to DockerHub</a></li>
-<li>4.3 <a href="">Pull container image from DockerHub</a></li>
+<li>4.1 <a href="4-interactpcr/4.1-createdockerhubacc/">Create DockerHub account</a></li>
+<li>4.2 <a href="4-interactpcr/4.2-pushimagetodockerhub/">Push container image to DockerHub</a></li>
+<li>4.3 <a href="4-interactpcr/4.3-pullimagefromdockerhub/">Pull container image from DockerHub</a></li>
 </ul>
 </li>
-<li><a href="">Deploy application to Kubernetes</a>
+<li><a href="5-deploytok8s/">Deploy application to Kubernetes</a>
 <ul>
-<li>5.1 <a href="">Install Kubernetes</a></li>
-<li>5.2 <a href="">Deploy application with Kubernetes POD by kubectl</a></li>
-<li>5.3 <a href="">Deploy application with Kubernetes POD by YAML manifest file</a></li>
+<li>5.1 <a href="5-deploytok8s/5.1-installk8s/">Install Kubernetes</a></li>
+<li>5.2 <a href="5-deploytok8s/5.2-deployk8simperative/">Deploy application with Kubernetes POD by kubectl</a></li>
+<li>5.3 <a href="5-deploytok8s/5.3-deployk8sdeclarative/">Deploy application with Kubernetes POD by YAML manifest file</a></li>
 </ul>
 </li>
-<li><a href="">Deploy applicaiton with Amazon EKS</a>
+<li><a href="6-deploytoeks/">Deploy applicaiton with Amazon EKS</a>
 <ul>
-<li>6.1 <a href="">Install eksclt</a></li>
-<li>6.2 <a href="">Deploy application by EKS Managed nodegroup</a></li>
-<li>6.3 <a href="">Deploy application by EKS Fargate Profile</a></li>
+<li>6.1 <a href="6-deploytoeks/6.1-installeks/">Install eksclt</a></li>
+<li>6.2 <a href="6-deploytoeks/6.2-eksmanagednodegroup/">Deploy application by EKS Cluster Managed nodegroup</a></li>
 </ul>
 </li>
-<li><a href="">Cleanup resources</a></li>
+<li><a href="/7-cleanup/">Cleanup resources</a></li>
 </ol>
 	
   
@@ -1367,19 +1366,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1714703708"></script>
-    <script src="/js/perfect-scrollbar.min.js?1714703708"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1714703708"></script>
-    <script src="/js/jquery.sticky.js?1714703708"></script>
-    <script src="/js/featherlight.min.js?1714703708"></script>
-    <script src="/js/highlight.pack.js?1714703708"></script>
+    <script src="/js/clipboard.min.js?1714749797"></script>
+    <script src="/js/perfect-scrollbar.min.js?1714749797"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1714749797"></script>
+    <script src="/js/jquery.sticky.js?1714749797"></script>
+    <script src="/js/featherlight.min.js?1714749797"></script>
+    <script src="/js/highlight.pack.js?1714749797"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1714703708"></script>
-    <script src="/js/learn.js?1714703708"></script>
-    <script src="/js/hugo-learn.js?1714703708"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1714749797"></script>
+    <script src="/js/learn.js?1714749797"></script>
+    <script src="/js/hugo-learn.js?1714749797"></script>
 
-    <link href="/mermaid/mermaid.css?1714703708" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1714703708"></script>
+    <link href="/mermaid/mermaid.css?1714749797" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1714749797"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
