@@ -1,0 +1,183 @@
+[
+{
+	"uri": "/vi/1-introduce/",
+	"title": "Giới thiệu",
+	"tags": [],
+	"description": "",
+	"content": "Docker Tổng quan Docker là một mã nguồn mở cho việc phát triển, di chuyển và triển khai ứng dụng. Docker cho phép bạn tách ứng dụng khỏi cơ sở hạ tầng để bạn có thể phân phối phần mềm nhanh chóng. Với Docker, bạn có thể quản lý hạ tầng như cách bạn quản lý ứng dụng. Bằng cách tận dụng các phương pháp của Docker để vận chuyển, kiểm thử và triển khai mã code, bạn có thể làm giảm đang kể độ trễ giữa việc viết mã code và triển khai nó trên môi trường sản phẩm.\nKiến trúc Docker The Docker daemon: The Docker daemon listens for Docker API requests and manages Docker objects such as images, containers, networks, and volumes. A daemon can also communicate with other daemons to manage Docker services.\nThe Docker client: The Docker client is the primary way that many Docker users interact with Docker. When you use commands, the client sends these commands to Docker daemon, which carries them out. The docker command uses the Docker API. The Docker client can communicate with more than one daemon.\nDocker Desktop: Docker Desktop is an easy-to-install application for your Mac, Windows or Linux environment that enables you to build and share containerized applications and microservices.\nDocker registries: A Docker registry stores Docker images. Docker Hub is a public registry that anyone can use, and Docker looks for images on Docker Hub by default.\nImages: An image is a read-only template with instructions for creating a Docker container.\nContainers: A container is a runnable instance of an image. You can create, start, stop, move, or delete a container using the Docker API or CLI.\nTruy cập Docker docs để thêm thông tin.\n\rKubernetes Tổng quan Kubernetes is a portable, extensible, open source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available.\nKiến trúc cụm Kubernetes Cluster: A Kubernetes cluster consists of a set of worker machines, called nodes, that run containerized applications. Every cluster has at least one worker node.\nControl Plane: The control plane manages the worker nodes and the Pods in the cluster. In production environments, the control plane usually runs across multiple computers and a cluster usually runs multiple nodes, providing fault-tolerance and high availability.\nWorker Nodes: The worker node(s) host the Pods that are the components of the application workload\nkube-api-server: The API server is a component of the Kubernetes control plane that exposes the Kubernetes API. The API server is the front end for the Kubernetes control plane.\netcd: Consistent and highly-available key value store used as Kubernetes\u0026rsquo; backing store for all cluster data.\nScheduler: Control plane component that watches for newly created Pods with no assigned node, and selects a node for them to run on.\nController Manager: Control plane component that runs controller processes. Logically, each controller is a separate process, but to reduce complexity, they are all compiled into a single binary and run in a single process. There are many different types of controllers. Some examples of them are:\n Node controller: Responsible for noticing and responding when nodes go down. Job controller: Watches for Job objects that represent one-off tasks, then creates Pods to run those tasks to completion. EndpointSlice controller: Populates EndpointSlice objects (to provide a link between Services and Pods). ServiceAccount controller: Create default ServiceAccounts for new namespaces.  The above is not an exhaustive list.\nkubelet: An agent that runs on each node in the cluster. It makes sure that containers are running in a Pod.\nkube-proxy: kube-proxy is a network proxy that runs on each node in your cluster, implementing part of the Kubernetes Service concept.\npod: is a single instance of an application and the smallest object, that you can create in Kubernetes.\nContainer Runtime Interface (CRI): A fundamental component that empowers Kubernetes to run containers effectively. It is responsible for managing the execution and lifecycle of containers within the Kubernetes environment.\ncloud-control-manager: A Kubernetes control plane component that embeds cloud-specific control logic. The cloud controller manager lets you link your cluster into your cloud provider\u0026rsquo;s API, and separates out the components that interact with that cloud platform from components that only interact with your cluster.\nAccess to Kubernetes docs for more detail.\n\rAmazon EKS Tổng quan Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that eliminates the need to install, operate, and maintain your own Kubernetes control plane on Amazon Web Services (AWS)\nKiến trúc Amazon EKS Amazon EKS ensures every cluster has its own unique Kubernetes control plane. This design keeps each cluster\u0026rsquo;s infrastructure separate, with no overlaps between clusters or AWS accounts. The setup includes:\n Distributed components: The control plane positions at least two API server instances and three etcd instances across three AWS Availability Zones within an AWS Region. Optimal performance: Amazon EKS actively monitors and adjusts control plane instances to maintain peak performance. Resilience: If a control plane instance falters, Amazon EKS quickly replaces it, using different Availability Zone if needed. Consistent uptime: By running clusters across multiple Availability Zones, a reliable API server endpoint availability Service Level Agreement (SLA) is achieved.  Amazon EKS uses Amazon Virtual Private Cloud (Amazon VPC) to limit traffic between control plane components within a single cluster. Cluster components can\u0026rsquo;t view or receive communication from other clusters or AWS accounts, except when authorized by Kubernetes role-based access control (RBAC) policies.\nIn addition to the control plane, an Amazon EKS cluster has a set of worker machines called nodes. Selecting the appropriate Amazon EKS cluster node type is crucial for meeting your specific requirements and optimizing resource utilization. Amazon EKS offers the following primary node types:\n AWS Fargate: Fargate is a serverless compute engine for containers that eliminates the need to manage the underlying instances. With Fargate, you specify your application\u0026rsquo;s resource needs, and AWS automatically provisions, scales, and maintains the infrastructure. This option is ideal for users who prioritize ease-of-use and want to concentrate on application development and deployment rather than managing infrastructure. Karpenter: Karpenter is a flexible, high-performance Kubernetes cluster autoscaler that helps improve application availability and cluster efficiency. Karpenter launches right-sized compute resources in response to changing application load. This option can provision just-in-time compute resources that meet the requirements of your workload. Managed node groups: Managed node groups are a blend of automation and customization for managing a collection of Amazon EC2 instances within an Amazon EKS cluster. AWS takes care of tasks like patching, updating, and scaling nodes, easing operational aspects. In parallel, custom kubelet arguments are supported, opening up possibilities for advanced CPU and memory management policies. Moreover, they enhance security via AWS Identity and Access Management (IAM) roles for service accounts, while curbing the need for separate permissions per cluster. Self-managed nodes: Self-managed nodes offer full control over your Amazon EC2 instances within an Amazon EKS cluster. You are in charge of managing, scaling, and maintaining the nodes, giving you total control over the underlying infrastructure. This option is suitable for users who need granular control and customization of their nodes and are ready to invest time in managing and maintaining their infrastructure.   Access to Amazon EKS docs for more detail.\n\r"
+},
+{
+	"uri": "/vi/",
+	"title": "Triển khai ứng dụng đầu tiên trên EKS",
+	"tags": [],
+	"description": "",
+	"content": "Triển khai ứng dụng đầu tiên trên EKS Tổng quan Trong bài thực hành này, chúng ta sẽ cùng tìm hiểu các khái niệm cơ bản và cách thức triển khai một ứng dụng đơn giản trên Docker, Kubernetes và Amazon EKS.\nNội dung  Giới thiệu Các bước chuẩn bị  2.1 Tạo môi trường Cloud9 2.2 Cấu hình IAM Role 2.3 Cài đặt ứng dụng 2.4 Tạo ứng dụng cơ bản   Triển khai ứng dụng với Docker  3.1 Cài đặt Docker 3.2 Tạo Dockerfile cho ứng dụng 3.3 Tạo container image cho ứng dụng 3.4 Triển khai ứng dụng với Docker   Thao tác với Public Container Registry  4.1 Tạo tài khoản DockerHub 4.2 Đẩy container image lên DockerHub 4.3 Tải container image từ Docker   Triển khai ứng dụng với Kubernetes  5.1 Cài đặt Kubernetes 5.2 Triển khai ứng dụng với Kubernetes POD bằng kubectl 5.3 Triển khai ứng dụng với kubernetes POD bằng YAML manifest file   Triển khai ứng dụng với EKS  6.1 Cài đặt eksclt 6.2 Triển khai ứng dụng bằng EKS Managed nodegroup 6.3 Triển khai ứng dụng bằng EKS Fargate Profile   Dọn dẹp tài nguyên  "
+},
+{
+	"uri": "/vi/2-prerequiste/2.1-createcloud9workspace/",
+	"title": "Tạo môi trường làm việc Cloud9",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/2-prerequiste/",
+	"title": "Các bước chuẩn bị",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/2-prerequiste/2.2-modifyiamrole/",
+	"title": "Cấu hình IAM role",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/2-prerequiste/2.3-installation/",
+	"title": "Cài đặt ứng dụng",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/3-deployappwithdocker/",
+	"title": "Triển khai ứng dụng với Docker",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/2-prerequiste/2.4-createbasicapp/",
+	"title": "Tạo ứng dụng đơn giản",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/3-deployappwithdocker/3.1-installdocker/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/3-deployappwithdocker/3.2-createdockerfile/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/3-deployappwithdocker/3.3-createdockerimage/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/3-deployappwithdocker/3.4-deployapp/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/4-interactpcr/4.1-createdockerhubacc/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/4-interactpcr/4.2-pushimagetodockerhub/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/4-interactpcr/4.3-pullimagefromdockerhub/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/4-interactpcr/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/5-deploytok8s/5.1-installk8s/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/5-deploytok8s/5.2-deployk8simperative/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/5-deploytok8s/5.3-deployk8sdeclarative/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/5-deploytok8s/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/6-deploytoeks/6.1-installeks/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/6-deploytoeks/6.2-eksmanagednodegroup/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/6-deploytoeks/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/7-cleanup/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
