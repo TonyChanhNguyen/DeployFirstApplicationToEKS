@@ -18,7 +18,6 @@ eksctl delete cluster --name my-fcj-cluster --region ap-southeast-1
 It will take you about 20 minutes to delete.
 {{% /notice %}}
 
-![Clean up resources](../images/7.cleanup/7.2.cleanup.png?pc=90pt)
 
 ### Delete Cloud9 Workspace
 1. Go to [Cloud9](https://ap-southeast-1.console.aws.amazon.com/cloud9control/home?region=ap-southeast-1#/).

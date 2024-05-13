@@ -12,21 +12,21 @@
     <title>Triển khai ứng dụng với Kubernetes POD bằng kubectl :: Triển khai ứng dụng đầu tiên trên EKS</title>
 
     
-    <link href="/css/nucleus.css?1714749797" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1714749797" rel="stylesheet">
-    <link href="/css/hybrid.css?1714749797" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1714749797" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1714749797" rel="stylesheet">
-    <link href="/css/auto-complete.css?1714749797" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1714749797" rel="stylesheet">
-    <link href="/css/theme.css?1714749797" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1714749797" rel="stylesheet">
+    <link href="/css/nucleus.css?1715600265" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1715600265" rel="stylesheet">
+    <link href="/css/hybrid.css?1715600265" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1715600265" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1715600265" rel="stylesheet">
+    <link href="/css/auto-complete.css?1715600265" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1715600265" rel="stylesheet">
+    <link href="/css/theme.css?1715600265" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1715600265" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1714749797" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1715600265" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1714749797"></script>
+    <script src="/js/jquery-3.3.1.min.js?1715600265"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1714749797"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1714749797"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1715600265"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1715600265"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1714749797"></script>
+<script type="text/javascript" src="/js/search.js?1715600265"></script>
 
     
   </div>
@@ -730,6 +730,27 @@
 
             
           
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/vi/6-deploytoeks/6.3-eksfargate/index/" title="Triển khai ứng dụng bằng EKS Cluster Fargate Profile" class="dd-item ">
+        <a href="/vi/6-deploytoeks/6.3-eksfargate/index/">
+         <b> 6.3 </b> Triển khai ứng dụng bằng EKS Cluster Fargate Profile
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
         
         </ul>
               
@@ -987,18 +1008,18 @@
 </code></pre><p><img src="../../../images/5.deployapptok8s/5.2.deployk8simperative/5.2.5.deployk8simperative.png?pc=90pt" alt="Triển khai K8S Imperative"></p>
 <ol start="8">
 <li>
-<p>Nhấn<strong>Window</strong>. Chọn <strong>New Terminal</strong> để tạo một cửa sổ lệnh riêng biệt.
+<p>Nhấn <strong>Window</strong>. Chọn <strong>New Terminal</strong> để tạo một cửa sổ lệnh riêng biệt.
 <img src="../../../images/5.deployapptok8s/5.2.deployk8simperative/5.2.6.deployk8simperative.png?pc=90pt" alt="Triển khai K8S Imperative"></p>
 </li>
 <li>
-<p>Liệt kê cà kiểm tra Service tên <strong>mybasicapp</strong> lần nữa.</p>
+<p>Liệt kê và kiểm tra Service tên <strong>mybasicapp</strong> lần nữa.</p>
 </li>
 </ol>
 <pre tabindex="0"><code>kubectl get service
 </code></pre><p><img src="../../../images/5.deployapptok8s/5.2.deployk8simperative/5.2.7.deployk8simperative.png?pc=90pt" alt="Triển khai K8S Imperative"></p>
 <p><strong>EXTERNAL-IP</strong> xuất hiện.</p>
 <ol start="10">
-<li>Bây giờ chứng ta kiểm thử ứng dụng bằng câu lệnh.</li>
+<li>Bây giờ chúng ta kiểm thử ứng dụng bằng câu lệnh.</li>
 </ol>
 <pre tabindex="0"><code>curl http://&lt;REPLACE-WITH-EXTERNAL-IP&gt;:8080
 </code></pre><p><img src="../../../images/5.deployapptok8s/5.2.deployk8simperative/5.2.8.deployk8simperative.png?pc=90pt" alt="Triển khai K8S Imperative"></p>
@@ -1417,6 +1438,22 @@ kubectl delete service mybasicapp
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1458,19 +1495,19 @@ kubectl delete service mybasicapp
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1714749797"></script>
-    <script src="/js/perfect-scrollbar.min.js?1714749797"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1714749797"></script>
-    <script src="/js/jquery.sticky.js?1714749797"></script>
-    <script src="/js/featherlight.min.js?1714749797"></script>
-    <script src="/js/highlight.pack.js?1714749797"></script>
+    <script src="/js/clipboard.min.js?1715600265"></script>
+    <script src="/js/perfect-scrollbar.min.js?1715600265"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1715600265"></script>
+    <script src="/js/jquery.sticky.js?1715600265"></script>
+    <script src="/js/featherlight.min.js?1715600265"></script>
+    <script src="/js/highlight.pack.js?1715600265"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1714749797"></script>
-    <script src="/js/learn.js?1714749797"></script>
-    <script src="/js/hugo-learn.js?1714749797"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1715600265"></script>
+    <script src="/js/learn.js?1715600265"></script>
+    <script src="/js/hugo-learn.js?1715600265"></script>
 
-    <link href="/mermaid/mermaid.css?1714749797" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1714749797"></script>
+    <link href="/mermaid/mermaid.css?1715600265" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1715600265"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

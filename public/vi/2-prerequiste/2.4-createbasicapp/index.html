@@ -12,21 +12,21 @@
     <title>Tạo ứng dụng đơn giản :: Triển khai ứng dụng đầu tiên trên EKS</title>
 
     
-    <link href="/css/nucleus.css?1714749797" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1714749797" rel="stylesheet">
-    <link href="/css/hybrid.css?1714749797" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1714749797" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1714749797" rel="stylesheet">
-    <link href="/css/auto-complete.css?1714749797" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1714749797" rel="stylesheet">
-    <link href="/css/theme.css?1714749797" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1714749797" rel="stylesheet">
+    <link href="/css/nucleus.css?1715600265" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1715600265" rel="stylesheet">
+    <link href="/css/hybrid.css?1715600265" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1715600265" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1715600265" rel="stylesheet">
+    <link href="/css/auto-complete.css?1715600265" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1715600265" rel="stylesheet">
+    <link href="/css/theme.css?1715600265" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1715600265" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1714749797" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1715600265" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1714749797"></script>
+    <script src="/js/jquery-3.3.1.min.js?1715600265"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1714749797"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1714749797"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1715600265"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1715600265"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1714749797"></script>
+<script type="text/javascript" src="/js/search.js?1715600265"></script>
 
     
   </div>
@@ -730,6 +730,27 @@
 
             
           
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/vi/6-deploytoeks/6.3-eksfargate/index/" title="Triển khai ứng dụng bằng EKS Cluster Fargate Profile" class="dd-item ">
+        <a href="/vi/6-deploytoeks/6.3-eksfargate/index/">
+         <b> 6.3 </b> Triển khai ứng dụng bằng EKS Cluster Fargate Profile
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
         
         </ul>
               
@@ -952,7 +973,7 @@
 
 	<p>Ở bước này, chúng ta sẽ tạo một ứng dụng đơn giản sử dụng NodeJS và Express framework.</p>
 <ol>
-<li>Tại Cloud9 terminal, nhập dòng lệnh bên dưới để tạo thư mục cho ứng dụng.</li>
+<li>Tại cửa sổ lệnh Cloud9, nhập dòng lệnh bên dưới để tạo thư mục cho ứng dụng.</li>
 </ol>
 <pre tabindex="0"><code>mkdir app
 cd app
@@ -1003,30 +1024,48 @@ cd app
 <li>Ứng dụng của bạn đã chạy trên cổng 8080.
 <img src="../../../images/2.prerequisites/2.4.createapp/2.4.4.createapp.png?pc=60pt" alt="Create basic application"></li>
 </ol>
-<p>Bây giờ, chúng ta cần truy cập vào ứng dụng để thấy kết quả.
-12. Nhấn <strong>Share</strong>.
-13. Sao chép <strong>IP Address</strong> ở mục <strong>Application</strong>.
+<p>Bây giờ, chúng ta cần truy cập vào ứng dụng để thấy kết quả.</p>
+<ol start="12">
+<li>
+<p>Nhấn <strong>Share</strong>.</p>
+</li>
+<li>
+<p>Sao chép <strong>IP Address</strong> ở mục <strong>Application</strong>.
 <img src="../../../images/2.prerequisites/2.4.createapp/2.4.5.createapp.png?pc=60pt" alt="Create basic application"></p>
-<ol start="14">
-<li>Truy cập ứng dụng bằng URL <code>http://&lt;REPLACE_YOUR_IP&gt;:8080</code>.</li>
-<li>Ứng dụng của bạn không thể truy cập.
-<img src="../../../images/2.prerequisites/2.4.createapp/2.4.6.createapp.png?pc=60pt" alt="Create basic application"></li>
+</li>
+<li>
+<p>Truy cập ứng dụng bằng URL <code>http://&lt;REPLACE_YOUR_IP&gt;:8080</code>.</p>
+</li>
+<li>
+<p>Ứng dụng của bạn không thể truy cập.
+<img src="../../../images/2.prerequisites/2.4.createapp/2.4.6.createapp.png?pc=60pt" alt="Create basic application"></p>
+</li>
 </ol>
-<p>Nguyên nhân và bởi vì security group của máy chủ làm việc vẫn chưa mở cổng 8080
-16. Nhấn vào biểu tượng <strong>R</strong> và chọn <strong>Manage EC2 Instance</strong> để trở lại máy chủ làm việc.
+<p>Nguyên nhân và bởi vì security group của máy chủ làm việc vẫn chưa mở cổng 8080.</p>
+<ol start="16">
+<li>
+<p>Nhấn vào biểu tượng <strong>R</strong> và chọn <strong>Manage EC2 Instance</strong> để trở lại máy chủ làm việc.
 <img src="../../../images/2.prerequisites/2.4.createapp/2.4.7.createapp.png?pc=60pt" alt="Create basic application"></p>
-<ol start="17">
-<li>Tại trang <strong>Instances</strong>, chọn máy chủ làm việc của bạn.</li>
-<li>Chuyển sang mục <strong>Security</strong>.</li>
-<li>Nhấn <strong>Security Group</strong>.
-<img src="../../../images/2.prerequisites/2.4.createapp/2.4.8.createapp.png?pc=60pt" alt="Create basic application"></li>
+</li>
+<li>
+<p>Tại trang <strong>Instances</strong>, chọn máy chủ làm việc của bạn.</p>
+</li>
+<li>
+<p>Chuyển sang mục <strong>Security</strong>.</p>
+</li>
+<li>
+<p>Nhấn <strong>Security Group</strong>.
+<img src="../../../images/2.prerequisites/2.4.createapp/2.4.8.createapp.png?pc=60pt" alt="Create basic application"></p>
+</li>
 </ol>
-<p>Tại trang <strong>Inbound rules</strong>, bạn có thể thấy chưa có quy tắc nào được định nghĩa.
-20. Nhấn <strong>Edit inbound rules</strong>.
-<img src="../../../images/2.prerequisites/2.4.createapp/2.4.9.createapp.png?pc=60pt" alt="Create basic application">
-21. Tại trang <strong>Edit inbound rules</strong>, nhấn <strong>Add rule</strong>.
-<img src="../../../images/2.prerequisites/2.4.createapp/2.4.10.createapp.png?pc=60pt" alt="Create basic application">
-22. Định nghĩa quy tắc với thông số:</p>
+<p>Tại trang <strong>Inbound rules</strong>, bạn có thể thấy chưa có quy tắc nào được định nghĩa.</p>
+<ol start="20">
+<li>Nhấn <strong>Edit inbound rules</strong>.
+<img src="../../../images/2.prerequisites/2.4.createapp/2.4.9.createapp.png?pc=60pt" alt="Create basic application"></li>
+<li>Tại trang <strong>Edit inbound rules</strong>, nhấn <strong>Add rule</strong>.
+<img src="../../../images/2.prerequisites/2.4.createapp/2.4.10.createapp.png?pc=60pt" alt="Create basic application"></li>
+<li>Định nghĩa quy tắc với thông số:</li>
+</ol>
 <ul>
 <li><strong>Type</strong> là <strong>Custom TCP</strong>.</li>
 <li><strong>Port range</strong> là <strong>8080</strong>.</li>
@@ -1448,6 +1487,22 @@ cd app
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1489,19 +1544,19 @@ cd app
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1714749797"></script>
-    <script src="/js/perfect-scrollbar.min.js?1714749797"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1714749797"></script>
-    <script src="/js/jquery.sticky.js?1714749797"></script>
-    <script src="/js/featherlight.min.js?1714749797"></script>
-    <script src="/js/highlight.pack.js?1714749797"></script>
+    <script src="/js/clipboard.min.js?1715600265"></script>
+    <script src="/js/perfect-scrollbar.min.js?1715600265"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1715600265"></script>
+    <script src="/js/jquery.sticky.js?1715600265"></script>
+    <script src="/js/featherlight.min.js?1715600265"></script>
+    <script src="/js/highlight.pack.js?1715600265"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1714749797"></script>
-    <script src="/js/learn.js?1714749797"></script>
-    <script src="/js/hugo-learn.js?1714749797"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1715600265"></script>
+    <script src="/js/learn.js?1715600265"></script>
+    <script src="/js/hugo-learn.js?1715600265"></script>
 
-    <link href="/mermaid/mermaid.css?1714749797" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1714749797"></script>
+    <link href="/mermaid/mermaid.css?1715600265" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1715600265"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

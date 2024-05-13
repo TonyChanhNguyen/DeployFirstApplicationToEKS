@@ -6,18 +6,6 @@ chapter : false
 pre : " <b> 6.2 </b> "
 ---
 
-Một Kubernetes node mà một máy chạy các ứng dụng được đóng gói theo phương thức container. Mỗi node có các thành phần sau:
-+ **Container runtime** – Phần mềm có trách nhiệm cho việc khởi chạy container.
-+ **kubelet** – Đảm bảo rằng các container hoạt động tốt và chạy trong Pod được liên kết của chúng.
-+ **kube-proxy** – Duy trì các quy tắc mạng cho phép liên lạc với Pod của bạn
-
-Amazon EKS cung cấp các loại node chính sau:
-- **AWS Fargate**: Fargate là công cụ điện toán serverless dành cho vùng chứa giúp loại bỏ nhu cầu quản lý các phiên bản cơ bản. Với Fargate, bạn chỉ định nhu cầu tài nguyên của ứng dụng và AWS sẽ tự động cung cấp, thay đổi quy mô và duy trì cơ sở hạ tầng. Tùy chọn này lý tưởng cho những người dùng ưu tiên tính dễ sử dụng và muốn tập trung vào phát triển và triển khai ứng dụng thay vì quản lý cơ sở hạ tầng.
-- **Karpenter**: Karpenter là một công cụ tự động chia tỷ lệ Kubernetes Cluster linh hoạt, hiệu suất cao, giúp cải thiện tính khả dụng của ứng dụng và hiệu quả của cụm. Karpenter khởi chạy các tài nguyên điện toán có kích thước phù hợp để đáp ứng nhu cầu tải ứng dụng thay đổi. Tùy chọn này có thể cung cấp tài nguyên điện toán kịp thời đáp ứng yêu cầu khối lượng công việc của bạn.
-- **Managed node groups**: Managed node groups là sự kết hợp giữa tự động hóa và tùy chỉnh để quản lý tập hợp phiên bản Amazon EC2 trong Amazon EKS cluster. AWS đảm nhiệm các nhiệm vụ như vá lỗi, cập nhật và thay đổi quy mô node, giúp đơn giản hóa các khía cạnh vận hành. Song song đó, các đối số kubelet tùy chỉnh được hỗ trợ, mở ra khả năng cho các chính sách quản lý bộ nhớ và CPU nâng cao. ơn nữa, chúng còn tăng cường bảo mật thông qua vai trò AWS Identity and Access Management (IAM) cho các tài khoản dịch vụ, đồng thời hạn chế nhu cầu về các quyền riêng biệt cho mỗi cluster.
-- **Self-managed nodes**: Self-managed nodes cung cấp toàn quyền kiểm soát các phiên bản Amazon EC2 của bạn trong Amazon EKS cluster. Bạn chịu trách nhiệm quản lý, mở rộng quy mô và duy trì các node, mang lại cho bạn toàn quyền kiểm soát cơ sở hạ tầng cơ bản. Tùy chọn này phù hợp với những người dùng cần kiểm soát và tùy chỉnh chi tiết các node của họ và sẵn sàng đầu tư thời gian vào việc quản lý và duy trì cơ sở hạ tầng của họ.
-
-**Nhưng trong bài thực hành này, chúng ta sẽ chỉ tập trung vào việc triển khai ứng dụng trên Amazon EKS Cluster Managed Nodegroup.**
 ### Tạo EKS Cluster
 1. Tại cửa sổ lệnh Cloud9, thực thi câu lệnh dưới để tạo EKS Cluster.
 ```

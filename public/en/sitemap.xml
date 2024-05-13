@@ -182,6 +182,8 @@
                 href="/3-deployappwithdocker/3.3-createdockerimage/"
                 />
   </url><url>
+    <loc>/6-deploytoeks/6.3-eksfargate/</loc>
+  </url><url>
     <loc>/3-deployappwithdocker/</loc>
     <xhtml:link
                 rel="alternate"

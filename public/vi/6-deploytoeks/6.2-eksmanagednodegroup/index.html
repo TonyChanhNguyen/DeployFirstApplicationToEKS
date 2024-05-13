@@ -12,21 +12,21 @@
     <title>Triển khai ứng dụng lên EKS Cluster Managed Nodegroup :: Triển khai ứng dụng đầu tiên trên EKS</title>
 
     
-    <link href="/css/nucleus.css?1714749797" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1714749797" rel="stylesheet">
-    <link href="/css/hybrid.css?1714749797" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1714749797" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1714749797" rel="stylesheet">
-    <link href="/css/auto-complete.css?1714749797" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1714749797" rel="stylesheet">
-    <link href="/css/theme.css?1714749797" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1714749797" rel="stylesheet">
+    <link href="/css/nucleus.css?1715600265" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1715600265" rel="stylesheet">
+    <link href="/css/hybrid.css?1715600265" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1715600265" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1715600265" rel="stylesheet">
+    <link href="/css/auto-complete.css?1715600265" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1715600265" rel="stylesheet">
+    <link href="/css/theme.css?1715600265" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1715600265" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1714749797" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1715600265" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1714749797"></script>
+    <script src="/js/jquery-3.3.1.min.js?1715600265"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1714749797"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1714749797"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1715600265"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1715600265"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1714749797"></script>
+<script type="text/javascript" src="/js/search.js?1715600265"></script>
 
     
   </div>
@@ -730,6 +730,27 @@
 
             
           
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/vi/6-deploytoeks/6.3-eksfargate/index/" title="Triển khai ứng dụng bằng EKS Cluster Fargate Profile" class="dd-item ">
+        <a href="/vi/6-deploytoeks/6.3-eksfargate/index/">
+         <b> 6.3 </b> Triển khai ứng dụng bằng EKS Cluster Fargate Profile
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
         
         </ul>
               
@@ -959,12 +980,8 @@
 <li><strong>kubelet</strong> – Đảm bảo rằng các container hoạt động tốt và chạy trong Pod được liên kết của chúng.</li>
 <li><strong>kube-proxy</strong> – Duy trì các quy tắc mạng cho phép liên lạc với Pod của bạn</li>
 </ul>
-<p>Amazon EKS cung cấp các loại node chính sau:</p>
 <ul>
-<li><strong>AWS Fargate</strong>: Fargate là công cụ điện toán serverless dành cho vùng chứa giúp loại bỏ nhu cầu quản lý các phiên bản cơ bản. Với Fargate, bạn chỉ định nhu cầu tài nguyên của ứng dụng và AWS sẽ tự động cung cấp, thay đổi quy mô và duy trì cơ sở hạ tầng. Tùy chọn này lý tưởng cho những người dùng ưu tiên tính dễ sử dụng và muốn tập trung vào phát triển và triển khai ứng dụng thay vì quản lý cơ sở hạ tầng.</li>
-<li><strong>Karpenter</strong>: Karpenter là một công cụ tự động chia tỷ lệ Kubernetes Cluster linh hoạt, hiệu suất cao, giúp cải thiện tính khả dụng của ứng dụng và hiệu quả của cụm. Karpenter khởi chạy các tài nguyên điện toán có kích thước phù hợp để đáp ứng nhu cầu tải ứng dụng thay đổi. Tùy chọn này có thể cung cấp tài nguyên điện toán kịp thời đáp ứng yêu cầu khối lượng công việc của bạn.</li>
 <li><strong>Managed node groups</strong>: Managed node groups là sự kết hợp giữa tự động hóa và tùy chỉnh để quản lý tập hợp phiên bản Amazon EC2 trong Amazon EKS cluster. AWS đảm nhiệm các nhiệm vụ như vá lỗi, cập nhật và thay đổi quy mô node, giúp đơn giản hóa các khía cạnh vận hành. Song song đó, các đối số kubelet tùy chỉnh được hỗ trợ, mở ra khả năng cho các chính sách quản lý bộ nhớ và CPU nâng cao. ơn nữa, chúng còn tăng cường bảo mật thông qua vai trò AWS Identity and Access Management (IAM) cho các tài khoản dịch vụ, đồng thời hạn chế nhu cầu về các quyền riêng biệt cho mỗi cluster.</li>
-<li><strong>Self-managed nodes</strong>: Self-managed nodes cung cấp toàn quyền kiểm soát các phiên bản Amazon EC2 của bạn trong Amazon EKS cluster. Bạn chịu trách nhiệm quản lý, mở rộng quy mô và duy trì các node, mang lại cho bạn toàn quyền kiểm soát cơ sở hạ tầng cơ bản. Tùy chọn này phù hợp với những người dùng cần kiểm soát và tùy chỉnh chi tiết các node của họ và sẵn sàng đầu tư thời gian vào việc quản lý và duy trì cơ sở hạ tầng của họ.</li>
 </ul>
 <p><strong>Nhưng trong bài thực hành này, chúng ta sẽ chỉ tập trung vào việc triển khai ứng dụng trên Amazon EKS Cluster Managed Nodegroup.</strong></p>
 <h3 id="tạo-eks-cluster">Tạo EKS Cluster</h3>
@@ -982,7 +999,7 @@
 <pre tabindex="0"><code>eksctl get cluster
 </code></pre><p><img src="../../../images/6.deployapptoeks/6.2.managednodegroup/6.2.3.managednodegroup.png?pc=90pt" alt="Amazon EKS Managed NodeGroup"></p>
 <ol start="3">
-<li>Liệt kê Nodes trong Cluster.</li>
+<li>Liệt kê các Node trong Cluster.</li>
 </ol>
 <pre tabindex="0"><code>kubectl get node
 </code></pre><p><img src="../../../images/6.deployapptoeks/6.2.managednodegroup/6.2.4.managednodegroup.png?pc=89pt" alt="Amazon EKS Managed NodeGroup"></p>
@@ -991,7 +1008,7 @@
 <li>Di chuyển đến <a href="https://ap-southeast-1.console.aws.amazon.com/ec2/home?region=ap-southeast-1#Instances:instanceState=running;tag:alpha.eksctl.io/nodegroup-name=my-fcj-node;v=3;$case=tags:true%5C,client:false;$regex=tags:false%5C,client:false">EC2 Instance</a> để thấy các máy chủ kết nối với Node Group.
 <img src="../../../images/6.deployapptoeks/6.2.managednodegroup/6.2.5.managednodegroup.png?pc=90pt" alt="Amazon EKS Managed NodeGroup"></li>
 </ol>
-<p>Có 2 máy chủ được tạo (khớp với <strong>&ndash;nodes=2</strong> trong <strong>câu lệnh eksctl</strong>) với tên là <strong>my-fcj-cluster-my-fcj-node-Node</strong> (định dạng <!-- raw HTML omitted -->-<!-- raw HTML omitted -->-Node), loại <strong>t3.micro</strong> (khớp với <strong>&ndash;node-type=t3.micro</strong> trong <strong>câu lệnh eksctl</strong>) và Availability Zone là <strong>ap-southeast-1a</strong> và <strong>ap-southeast-1b</strong> (khớp với <strong>&ndash;zones=ap-southeast-1a,ap-southeast-1b</strong> trong <strong>câu lệnh eksctl</strong>).</p>
+<p>Có 2 máy chủ được tạo (khớp với <strong>&ndash;nodes=2</strong> trong <strong>câu lệnh eksctl</strong>) với tên là <strong>my-fcj-cluster-my-fcj-node-Node</strong> (định dạng <code>&lt;Cluster-Name&gt;-&lt;NodeGroup-Name&gt;-Node</code>), loại <strong>t3.micro</strong> (khớp với <strong>&ndash;node-type=t3.micro</strong> trong <strong>câu lệnh eksctl</strong>) và Availability Zone là <strong>ap-southeast-1a</strong> và <strong>ap-southeast-1b</strong> (khớp với <strong>&ndash;zones=ap-southeast-1a,ap-southeast-1b</strong> trong <strong>câu lệnh eksctl</strong>).</p>
 <h3 id="khám-phá-eks-cluster">Khám phá EKS Cluster</h3>
 <ol>
 <li>
@@ -1441,9 +1458,6 @@
             
         
                     
-            
-        
-                    
                         
             
             
@@ -1451,6 +1465,25 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -1475,7 +1508,7 @@
 			<a class="nav nav-prev" href="/vi/6-deploytoeks/6.1-installeks/" title="Cài đặt Amazon EKS"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/vi/7-cleanup/" title="Dọn dẹp tài nguyên" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/vi/6-deploytoeks/6.3-eksfargate/index/" title="Triển khai ứng dụng bằng EKS Cluster Fargate Profile" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1485,19 +1518,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1714749797"></script>
-    <script src="/js/perfect-scrollbar.min.js?1714749797"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1714749797"></script>
-    <script src="/js/jquery.sticky.js?1714749797"></script>
-    <script src="/js/featherlight.min.js?1714749797"></script>
-    <script src="/js/highlight.pack.js?1714749797"></script>
+    <script src="/js/clipboard.min.js?1715600265"></script>
+    <script src="/js/perfect-scrollbar.min.js?1715600265"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1715600265"></script>
+    <script src="/js/jquery.sticky.js?1715600265"></script>
+    <script src="/js/featherlight.min.js?1715600265"></script>
+    <script src="/js/highlight.pack.js?1715600265"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1714749797"></script>
-    <script src="/js/learn.js?1714749797"></script>
-    <script src="/js/hugo-learn.js?1714749797"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1715600265"></script>
+    <script src="/js/learn.js?1715600265"></script>
+    <script src="/js/hugo-learn.js?1715600265"></script>
 
-    <link href="/mermaid/mermaid.css?1714749797" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1714749797"></script>
+    <link href="/mermaid/mermaid.css?1715600265" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1715600265"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

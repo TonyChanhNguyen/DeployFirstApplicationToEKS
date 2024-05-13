@@ -12,21 +12,21 @@
     <title>Triển khai ứng dụng với Docker :: Triển khai ứng dụng đầu tiên trên EKS</title>
 
     
-    <link href="/css/nucleus.css?1714749797" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1714749797" rel="stylesheet">
-    <link href="/css/hybrid.css?1714749797" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1714749797" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1714749797" rel="stylesheet">
-    <link href="/css/auto-complete.css?1714749797" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1714749797" rel="stylesheet">
-    <link href="/css/theme.css?1714749797" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1714749797" rel="stylesheet">
+    <link href="/css/nucleus.css?1715600265" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1715600265" rel="stylesheet">
+    <link href="/css/hybrid.css?1715600265" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1715600265" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1715600265" rel="stylesheet">
+    <link href="/css/auto-complete.css?1715600265" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1715600265" rel="stylesheet">
+    <link href="/css/theme.css?1715600265" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1715600265" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1714749797" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1715600265" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1714749797"></script>
+    <script src="/js/jquery-3.3.1.min.js?1715600265"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1714749797"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1714749797"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1715600265"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1715600265"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1714749797"></script>
+<script type="text/javascript" src="/js/search.js?1715600265"></script>
 
     
   </div>
@@ -730,6 +730,27 @@
 
             
           
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/vi/6-deploytoeks/6.3-eksfargate/index/" title="Triển khai ứng dụng bằng EKS Cluster Fargate Profile" class="dd-item ">
+        <a href="/vi/6-deploytoeks/6.3-eksfargate/index/">
+         <b> 6.3 </b> Triển khai ứng dụng bằng EKS Cluster Fargate Profile
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
         
         </ul>
               
@@ -951,7 +972,7 @@
 <h4 id="kiến-trúc-docker">Kiến trúc Docker</h4>
 <p><strong>The Docker daemon</strong>: Docker daemon lắng nghe các yêu cầu Docker API và quản lý các đối tượng Docker như image, container, network và volume. Một daemon cũng giao tiếp với các daemon khác để quản lý các dịch vụ Docker.</p>
 <p><strong>The Docker client</strong>: Docker client là cách chính để nhiều người dùng Docker tương tác với Docker. Khi bạn sử dụng dòng lệnh, client gửi những dòng lệnh đó đến Docker daemon để thực hiện chúng. Dòng lệnh Docker sử dụng Docker API. Docker client có thể giao tiếp với một hoặc nhiều Docker daemon.</p>
-<p><strong>Docker Desktop</strong>: Docker Desktop là một ứng dụng dễ dàng cài đặt cho môi trường Mac, Windows hoặc Linux that enables you to build and share containerized applications and microservices. mà cho phép bạn xây dựng và chia sẻ các ứng dụng và microservice được đóng gói trong container.</p>
+<p><strong>Docker Desktop</strong>: Docker Desktop là một ứng dụng dễ dàng cài đặt cho môi trường Mac, Windows hoặc Linux mà cho phép bạn xây dựng và chia sẻ các ứng dụng và microservice được đóng gói trong container.</p>
 <p><strong>Docker registries</strong>: Docker registry chứa Docker images. Docker Hub là một công cộng mà mọi người có thể dùng, và Docker mặc định tìm kiếm images trên Docker Hub.</p>
 <p><strong>Images</strong>: Một image là một bản mẫu chỉ đọc với các hướng dẫn cho việc tạo một Docker container.</p>
 <p><strong>Containers</strong>: Container là một phiên bản có thể triển khai của image. Bạn có thể tạo, khởi chạy, dừng, di chuyển hoặc xóa một container bằng cách sử dụng Docker API hoặc CLI.</p>
@@ -1368,6 +1389,22 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1409,19 +1446,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1714749797"></script>
-    <script src="/js/perfect-scrollbar.min.js?1714749797"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1714749797"></script>
-    <script src="/js/jquery.sticky.js?1714749797"></script>
-    <script src="/js/featherlight.min.js?1714749797"></script>
-    <script src="/js/highlight.pack.js?1714749797"></script>
+    <script src="/js/clipboard.min.js?1715600265"></script>
+    <script src="/js/perfect-scrollbar.min.js?1715600265"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1715600265"></script>
+    <script src="/js/jquery.sticky.js?1715600265"></script>
+    <script src="/js/featherlight.min.js?1715600265"></script>
+    <script src="/js/highlight.pack.js?1715600265"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1714749797"></script>
-    <script src="/js/learn.js?1714749797"></script>
-    <script src="/js/hugo-learn.js?1714749797"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1715600265"></script>
+    <script src="/js/learn.js?1715600265"></script>
+    <script src="/js/hugo-learn.js?1715600265"></script>
 
-    <link href="/mermaid/mermaid.css?1714749797" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1714749797"></script>
+    <link href="/mermaid/mermaid.css?1715600265" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1715600265"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

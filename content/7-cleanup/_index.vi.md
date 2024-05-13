@@ -18,7 +18,6 @@ eksctl delete cluster --name my-fcj-cluster --region ap-southeast-1
 Sẽ mất khoảng 20 phút để xóa hoàn toàn EKS Cluster.
 {{% /notice %}}
 
-![Dọn dẹp tài nguyên](../../images/7.cleanup/7.2.cleanup.png?pc=90pt)
 
 ### Xóa môi trường Cloud9
 1. Đi đến [Cloud9](https://ap-southeast-1.console.aws.amazon.com/cloud9control/home?region=ap-southeast-1#/).

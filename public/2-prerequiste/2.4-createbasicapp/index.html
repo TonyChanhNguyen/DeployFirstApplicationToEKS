@@ -12,21 +12,21 @@
     <title>Create basic application :: Deploy first application on EKS</title>
 
     
-    <link href="/css/nucleus.css?1714749797" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1714749797" rel="stylesheet">
-    <link href="/css/hybrid.css?1714749797" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1714749797" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1714749797" rel="stylesheet">
-    <link href="/css/auto-complete.css?1714749797" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1714749797" rel="stylesheet">
-    <link href="/css/theme.css?1714749797" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1714749797" rel="stylesheet">
+    <link href="/css/nucleus.css?1715600265" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1715600265" rel="stylesheet">
+    <link href="/css/hybrid.css?1715600265" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1715600265" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1715600265" rel="stylesheet">
+    <link href="/css/auto-complete.css?1715600265" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1715600265" rel="stylesheet">
+    <link href="/css/theme.css?1715600265" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1715600265" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1714749797" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1715600265" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1714749797"></script>
+    <script src="/js/jquery-3.3.1.min.js?1715600265"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1714749797"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1714749797"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1715600265"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1715600265"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1714749797"></script>
+<script type="text/javascript" src="/js/search.js?1715600265"></script>
 
     
   </div>
@@ -730,6 +730,34 @@
 
             
           
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6-deploytoeks/6.3-eksfargate/" title="Deploy application to EKS Cluster Fargate" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/6-deploytoeks/6.3-eksfargate/">
+           <b> 6.3 </b> Deploy application to EKS Cluster Fargate
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
         
         </ul>
               
@@ -1003,14 +1031,22 @@ cd app
 <li>See, your application ran on port 8080.
 <img src="../../images/2.prerequisites/2.4.createapp/2.4.4.createapp.png?pc=60pt" alt="Create basic application"></li>
 </ol>
-<p>Now, we need to access to application to see the result.
-12. Click on <strong>Share</strong>.
-13. Copy the <strong>IP Address</strong> at <strong>Application</strong> field.
+<p>Now, we need to access to application to see the result.</p>
+<ol start="12">
+<li>
+<p>Click on <strong>Share</strong>.</p>
+</li>
+<li>
+<p>Copy the <strong>IP Address</strong> at <strong>Application</strong> field.
 <img src="../../images/2.prerequisites/2.4.createapp/2.4.5.createapp.png?pc=60pt" alt="Create basic application"></p>
-<ol start="14">
-<li>Access to the application with URL <code>http://&lt;REPLACE_YOUR_IP&gt;:8080</code>.</li>
-<li>Opps, the application can not be accessed.
-<img src="../../images/2.prerequisites/2.4.createapp/2.4.6.createapp.png?pc=60pt" alt="Create basic application"></li>
+</li>
+<li>
+<p>Access to the application with URL <code>http://&lt;REPLACE_YOUR_IP&gt;:8080</code>.</p>
+</li>
+<li>
+<p>Opps, the application can not be accessed.
+<img src="../../images/2.prerequisites/2.4.createapp/2.4.6.createapp.png?pc=60pt" alt="Create basic application"></p>
+</li>
 </ol>
 <p>The reason is the security group of workspace instance is still not opened for port 8080.</p>
 <ol start="16">
@@ -1029,12 +1065,14 @@ cd app
 <img src="../../images/2.prerequisites/2.4.createapp/2.4.8.createapp.png?pc=60pt" alt="Create basic application"></p>
 </li>
 </ol>
-<p>At <strong>Inbound rules</strong> interface, you can see there are no rules were defined.
-20. Click on <strong>Edit inbound rules</strong>.
-<img src="../../images/2.prerequisites/2.4.createapp/2.4.9.createapp.png?pc=60pt" alt="Create basic application">
-21. At <strong>Edit inbound rules</strong> interface, click on <strong>Add rule</strong>.
-<img src="../../images/2.prerequisites/2.4.createapp/2.4.10.createapp.png?pc=60pt" alt="Create basic application">
-22. Define the rule with parameter:</p>
+<p>At <strong>Inbound rules</strong> interface, you can see there are no rules were defined.</p>
+<ol start="20">
+<li>Click on <strong>Edit inbound rules</strong>.
+<img src="../../images/2.prerequisites/2.4.createapp/2.4.9.createapp.png?pc=60pt" alt="Create basic application"></li>
+<li>At <strong>Edit inbound rules</strong> interface, click on <strong>Add rule</strong>.
+<img src="../../images/2.prerequisites/2.4.createapp/2.4.10.createapp.png?pc=60pt" alt="Create basic application"></li>
+<li>Define the rule with parameter:</li>
+</ol>
 <ul>
 <li><strong>Type</strong> is <strong>Custom TCP</strong>.</li>
 <li><strong>Port range</strong> is <strong>8080</strong>.</li>
@@ -1456,6 +1494,22 @@ cd app
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1497,19 +1551,19 @@ cd app
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1714749797"></script>
-    <script src="/js/perfect-scrollbar.min.js?1714749797"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1714749797"></script>
-    <script src="/js/jquery.sticky.js?1714749797"></script>
-    <script src="/js/featherlight.min.js?1714749797"></script>
-    <script src="/js/highlight.pack.js?1714749797"></script>
+    <script src="/js/clipboard.min.js?1715600265"></script>
+    <script src="/js/perfect-scrollbar.min.js?1715600265"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1715600265"></script>
+    <script src="/js/jquery.sticky.js?1715600265"></script>
+    <script src="/js/featherlight.min.js?1715600265"></script>
+    <script src="/js/highlight.pack.js?1715600265"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1714749797"></script>
-    <script src="/js/learn.js?1714749797"></script>
-    <script src="/js/hugo-learn.js?1714749797"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1715600265"></script>
+    <script src="/js/learn.js?1715600265"></script>
+    <script src="/js/hugo-learn.js?1715600265"></script>
 
-    <link href="/mermaid/mermaid.css?1714749797" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1714749797"></script>
+    <link href="/mermaid/mermaid.css?1715600265" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1715600265"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

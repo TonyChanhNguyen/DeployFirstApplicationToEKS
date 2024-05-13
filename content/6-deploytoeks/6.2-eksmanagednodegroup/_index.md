@@ -6,18 +6,6 @@ chapter : false
 pre : " <b> 6.2 </b> "
 ---
 
-A Kubernetes node is a machine that runs containerized applications. Each node has the following components:
-+ **Container runtime** – Software that's responsible for running the containers.
-+ **kubelet** – Makes sure that containers are healthy and running within their associated Pod.
-+ **kube-proxy** – Maintains network rules that allow communication to your Pods.
-
-Your Amazon EKS cluster can schedule Pods on any combination of:
-- **AWS Fargate**: Fargate is a serverless compute engine for containers that eliminates the need to manage the underlying instances. With Fargate, you specify your application's resource needs, and AWS automatically provisions, scales, and maintains the infrastructure. This option is ideal for users who prioritize ease-of-use and want to concentrate on application development and deployment rather than managing infrastructure.
-- **Karpenter**: Karpenter is a flexible, high-performance Kubernetes cluster autoscaler that helps improve application availability and cluster efficiency. Karpenter launches right-sized compute resources in response to changing application load. This option can provision just-in-time compute resources that meet the requirements of your workload.
-- **Managed node groups**: Managed node groups are a blend of automation and customization for managing a collection of Amazon EC2 instances within an Amazon EKS cluster. AWS takes care of tasks like patching, updating, and scaling nodes, easing operational aspects. In parallel, custom kubelet arguments are supported, opening up possibilities for advanced CPU and memory management policies. Moreover, they enhance security via AWS Identity and Access Management (IAM) roles for service accounts, while curbing the need for separate permissions per cluster.
-- **Self-managed nodes**: Self-managed nodes offer full control over your Amazon EC2 instances within an Amazon EKS cluster. You are in charge of managing, scaling, and maintaining the nodes, giving you total control over the underlying infrastructure. This option is suitable for users who need granular control and customization of their nodes and are ready to invest time in managing and maintaining their infrastructure.cheduled on. Amazon EKS nodes run in your AWS account and connect to the control plane of your cluster through the cluster API server endpoint.
-
-**But in this workshop, we will only focus on deploying application to EKS Cluster Managed Nodegroup.**
 ### Create EKS Cluster
 1. At Cloud9 terminal, execute command below to create EKS Cluster.
 ```
@@ -96,3 +84,14 @@ kubectl get all
 ```
 ![Amazon EKS Managed NodeGroup](../../images/6.deployapptoeks/6.2.managednodegroup/6.2.12.managednodegroup.png?pc=90pt)
 
+3. Delete your node group.
+```
+eksctl delete nodegroup --cluster my-fcj-cluster --name my-fcj-node --region ap-southeast-1 --drain=false
+```
+![Amazon EKS Managed NodeGroup](../../images/6.deployapptoeks/6.2.managednodegroup/6.2.13.managednodegroup.png?pc=90pt)
+
+4. After about 10 minutes, list node on your cluster to confirm they are deleted.
+```
+kubectl get node
+```
+![Amazon EKS Managed NodeGroup](../../images/6.deployapptoeks/6.2.managednodegroup/6.2.14.managednodegroup.png?pc=90pt)

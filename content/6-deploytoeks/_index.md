@@ -29,6 +29,8 @@ In addition to the control plane, an Amazon EKS cluster has a set of worker mach
 Access to [Amazon EKS docs](https://docs.aws.amazon.com/eks/latest/userguide/) for more detail.
 {{% /notice %}}
 
+**In this workshop, we will only focus on how deploy application with EKS Cluster Managed node groups and Fargate Profile.**
 ### Content
 + 6.1 [Install eksclt](6-deploytoeks/6.1-installeks/)
 + 6.2 [Deploy application by EKS Cluster Managed nodegroup](6-deploytoeks/6.2-eksmanagednodegroup/)
++ 6.3 [Deploy application by EKS Cluster Fargate Profile](6-deploytoeks/6.3-eksfargate/)

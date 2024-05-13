@@ -12,21 +12,21 @@
     <title>Cài đặt ứng dụng :: Triển khai ứng dụng đầu tiên trên EKS</title>
 
     
-    <link href="/css/nucleus.css?1714749797" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1714749797" rel="stylesheet">
-    <link href="/css/hybrid.css?1714749797" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1714749797" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1714749797" rel="stylesheet">
-    <link href="/css/auto-complete.css?1714749797" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1714749797" rel="stylesheet">
-    <link href="/css/theme.css?1714749797" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1714749797" rel="stylesheet">
+    <link href="/css/nucleus.css?1715600265" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1715600265" rel="stylesheet">
+    <link href="/css/hybrid.css?1715600265" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1715600265" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1715600265" rel="stylesheet">
+    <link href="/css/auto-complete.css?1715600265" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1715600265" rel="stylesheet">
+    <link href="/css/theme.css?1715600265" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1715600265" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1714749797" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1715600265" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1714749797"></script>
+    <script src="/js/jquery-3.3.1.min.js?1715600265"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1714749797"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1714749797"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1715600265"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1715600265"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1714749797"></script>
+<script type="text/javascript" src="/js/search.js?1715600265"></script>
 
     
   </div>
@@ -730,6 +730,27 @@
 
             
           
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/vi/6-deploytoeks/6.3-eksfargate/index/" title="Triển khai ứng dụng bằng EKS Cluster Fargate Profile" class="dd-item ">
+        <a href="/vi/6-deploytoeks/6.3-eksfargate/index/">
+         <b> 6.3 </b> Triển khai ứng dụng bằng EKS Cluster Fargate Profile
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
         
         </ul>
               
@@ -952,23 +973,23 @@
 
 
 
-	<p>Trong bài thực hành này, chúng ta sẽ tạo một ứng dụng đơn giản với NodoJS và Express. Vì thế chúng ta cần kiểm tra phiên bản của chúng và tải xuống nếu chúng chưa được cài đặt.</p>
+	<p>Trong bài thực hành này, chúng ta sẽ tạo một ứng dụng đơn giản với NodeJS và Express. Vì thế chúng ta cần kiểm tra phiên bản của chúng và tải xuống nếu chúng chưa được cài đặt.</p>
 <h3 id="nâng-cấp-awscli">Nâng cấp awscli</h3>
 <ol>
-<li>Sao chép và dán dòng lệnh dưới đây vào Terminal của Cloud9 Workspace để nâng cấp awscli.</li>
+<li>Sao chép và dán dòng lệnh dưới đây vào cửa sổ lệnh của Cloud9 Workspace để nâng cấp awscli.</li>
 </ol>
 <pre tabindex="0"><code>sudo pip install --upgrade awscli &amp;&amp; hash -r
 </code></pre><p><img src="../../../images/2.prerequisites/2.3.installation/2.3.1.installation.png?pc=60pt" alt="Cài đặt ứng dụng"></p>
 <h3 id="kiểm-tra-phiên-bản-của-npm-và-node">Kiểm tra phiên bản của npm và node</h3>
 <ol>
-<li>Sao chép và dán dòng lệnh dưới đây vào Terminal của Cloud9 Workspace để kiểm tra phiên bản của npm và node.</li>
+<li>Sao chép và dán dòng lệnh dưới đây vào cửa sổ lệnh của Cloud9 Workspace để kiểm tra phiên bản của npm và node.</li>
 </ol>
 <pre tabindex="0"><code>npm version
 </code></pre><p><img src="../../../images/2.prerequisites/2.3.installation/2.3.2.installation.png?pc=60pt" alt="Cài đặt ứng dụng">
 Bạn có thể thấy, npm và node đã được cài đặt. Giờ chúng ta sẽ cài đặt Express framework bằng npm.</p>
 <h3 id="cài-đặt-express-framework">Cài đặt Express framework</h3>
 <ol>
-<li>Sao chép và dán dòng lệnh dưới đây vào Terminal của Cloud9 Workspace để cài đặt Express framework.</li>
+<li>Sao chép và dán dòng lệnh dưới đây vào cửa sổ lệnh của Cloud9 Workspace để cài đặt Express framework.</li>
 </ol>
 <pre tabindex="0"><code>npm install express --save
 </code></pre><p><img src="../../../images/2.prerequisites/2.3.installation/2.3.3.installation.png?pc=60pt" alt="Cài đặt ứng dụngion"></p>
@@ -1377,6 +1398,22 @@ Bạn có thể thấy, npm và node đã được cài đặt. Giờ chúng ta 
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1418,19 +1455,19 @@ Bạn có thể thấy, npm và node đã được cài đặt. Giờ chúng ta 
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1714749797"></script>
-    <script src="/js/perfect-scrollbar.min.js?1714749797"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1714749797"></script>
-    <script src="/js/jquery.sticky.js?1714749797"></script>
-    <script src="/js/featherlight.min.js?1714749797"></script>
-    <script src="/js/highlight.pack.js?1714749797"></script>
+    <script src="/js/clipboard.min.js?1715600265"></script>
+    <script src="/js/perfect-scrollbar.min.js?1715600265"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1715600265"></script>
+    <script src="/js/jquery.sticky.js?1715600265"></script>
+    <script src="/js/featherlight.min.js?1715600265"></script>
+    <script src="/js/highlight.pack.js?1715600265"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1714749797"></script>
-    <script src="/js/learn.js?1714749797"></script>
-    <script src="/js/hugo-learn.js?1714749797"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1715600265"></script>
+    <script src="/js/learn.js?1715600265"></script>
+    <script src="/js/hugo-learn.js?1715600265"></script>
 
-    <link href="/mermaid/mermaid.css?1714749797" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1714749797"></script>
+    <link href="/mermaid/mermaid.css?1715600265" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1715600265"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

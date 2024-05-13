@@ -35,5 +35,6 @@ Trong bài thực hành này, chúng ta sẽ cùng tìm hiểu các khái niệm
 6. [Triển khai ứng dụng với EKS](6-deploytoeks/)
     + 6.1 [Cài đặt eksclt](6-deploytoeks/6.1-installeks/)
     + 6.2 [Triển khai ứng dụng bằng EKS Cluster Managed nodegroup](6-deploytoeks/6.2-eksmanagednodegroup/)
+    + 6.3 [Triển khai ứng dụng bằng EKS Cluster Fargate Profile](6-deploytoeks/6.3-eksfargate/)
 7. [Dọn dẹp tài nguyên](/7-cleanup/)
 

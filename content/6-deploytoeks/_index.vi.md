@@ -29,6 +29,9 @@ Ngoài Control plane, một Amazon EKS cluster còn có một tập các worker 
 Truy cập [Amazon EKS docs](https://docs.aws.amazon.com/eks/latest/userguide/) để thêm thông tin.
 {{% /notice %}}
 
+**Trong bài thực hành này, chúng ta chỉ sẽ tập trung vào việc làm thế nào để triển khai ứng dụng với EKS Cluster Managed node groups and Fargate Profile.**
+
 ### Nội dung
 + 6.1 [Cài đặt eksclt](6.1-installeks/)
 + 6.2 [Triển khai ứng dụng bằng EKS Cluster Managed nodegroup](6.2-eksmanagednodegroup/)
++ 6.3 [Triển khai ứng dụng bằng EKS Cluster Fargate Profile](6-deploytoeks/6.3-eksfargate/)

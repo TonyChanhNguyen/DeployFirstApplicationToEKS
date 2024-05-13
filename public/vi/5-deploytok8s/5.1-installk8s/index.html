@@ -12,21 +12,21 @@
     <title>Cài đặt công cụ Kubernetes :: Triển khai ứng dụng đầu tiên trên EKS</title>
 
     
-    <link href="/css/nucleus.css?1714749797" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1714749797" rel="stylesheet">
-    <link href="/css/hybrid.css?1714749797" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1714749797" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1714749797" rel="stylesheet">
-    <link href="/css/auto-complete.css?1714749797" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1714749797" rel="stylesheet">
-    <link href="/css/theme.css?1714749797" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1714749797" rel="stylesheet">
+    <link href="/css/nucleus.css?1715600265" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1715600265" rel="stylesheet">
+    <link href="/css/hybrid.css?1715600265" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1715600265" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1715600265" rel="stylesheet">
+    <link href="/css/auto-complete.css?1715600265" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1715600265" rel="stylesheet">
+    <link href="/css/theme.css?1715600265" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1715600265" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1714749797" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1715600265" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1714749797"></script>
+    <script src="/js/jquery-3.3.1.min.js?1715600265"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1714749797"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1714749797"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1715600265"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1715600265"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1714749797"></script>
+<script type="text/javascript" src="/js/search.js?1715600265"></script>
 
     
   </div>
@@ -730,6 +730,27 @@
 
             
           
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/vi/6-deploytoeks/6.3-eksfargate/index/" title="Triển khai ứng dụng bằng EKS Cluster Fargate Profile" class="dd-item ">
+        <a href="/vi/6-deploytoeks/6.3-eksfargate/index/">
+         <b> 6.3 </b> Triển khai ứng dụng bằng EKS Cluster Fargate Profile
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
         
         </ul>
               
@@ -969,20 +990,28 @@
 <img src="../../../images/5.deployapptok8s/5.1.installkubectl/5.1.6.installkubectl.png?pc=90pt" alt="Cài đặt K8S"></p>
 </li>
 </ol>
-<p>Dung lượng lưu trữ hiện tại là 10GB. Chúng ta sẽ nâng cấp nó lên 50GB.
-4. Chọn <strong>EBS volume</strong>.
-5. Nhấn <strong>Action</strong>. Sau đó chọn <strong>Modify volume</strong>.
-<img src="../../../images/5.deployapptok8s/5.1.installkubectl/5.1.7.installkubectl.png?pc=90pt" alt="Cài đặt K8S">
-6. Đổi từ <strong>10</strong> lên <strong>50</strong> tại mục <strong>Size (GiB)</strong>.
-7. Nhấn <strong>Modify</strong>.
+<p>Dung lượng lưu trữ hiện tại là 10GB. Chúng ta sẽ nâng cấp nó lên 50GB.</p>
+<ol start="4">
+<li>
+<p>Chọn <strong>EBS volume</strong>.</p>
+</li>
+<li>
+<p>Nhấn <strong>Action</strong>. Sau đó chọn <strong>Modify volume</strong>.
+<img src="../../../images/5.deployapptok8s/5.1.installkubectl/5.1.7.installkubectl.png?pc=90pt" alt="Cài đặt K8S"></p>
+</li>
+<li>
+<p>Đổi từ <strong>10</strong> lên <strong>50</strong> tại mục <strong>Size (GiB)</strong>.</p>
+</li>
+<li>
+<p>Nhấn <strong>Modify</strong>.
 <img src="../../../images/5.deployapptok8s/5.1.installkubectl/5.1.8.installkubectl.png?pc=90pt" alt="Cài đặt K8S"></p>
-<ol start="8">
+</li>
 <li>
 <p>Sau đó, nhấn <strong>Modify</strong> để xác nhận.
 <img src="../../../images/5.deployapptok8s/5.1.installkubectl/5.1.9.installkubectl.png?pc=90pt" alt="Cài đặt K8S"></p>
 </li>
 <li>
-<p>Trở lại Cloud9 terminal, thực thi câu lệnh dưới đây để khởi động lại máy chủ làm việc.</p>
+<p>Trở lại cửa sổ lệnh Cloud9, thực thi câu lệnh dưới đây để khởi động lại máy chủ làm việc.</p>
 </li>
 </ol>
 <pre tabindex="0"><code>sudo reboot
@@ -995,7 +1024,7 @@
 <img src="../../../images/5.deployapptok8s/5.1.installkubectl/5.1.11.installkubectl.png?pc=90pt" alt="Cài đặt K8S"></p>
 <h3 id="cài-đặt-kubectl">Cài đặt kubectl</h3>
 <ol>
-<li>Tại <strong>Cloud9 Terminal</strong>, thực thi câu lệnh dưới đây để cài đặt <strong>kubectl</strong>.</li>
+<li>Tại <strong>Cửa sổ lệnh Cloud9</strong>, thực thi câu lệnh dưới đây để cài đặt <strong>kubectl</strong>.</li>
 </ol>
 <ul>
 <li>Cập nhật máy chủ.</li>
@@ -1013,7 +1042,7 @@
 </code></pre><p><img src="../../../images/5.deployapptok8s/5.1.installkubectl/5.1.3.installkubectl.png?pc=90pt" alt="Cài đặt K8S"></p>
 <h3 id="cài-đặt-minikube">Cài đặt minikube</h3>
 <ol>
-<li>Tại <strong>Cloud9 Terminal</strong>, thực thi câu lệnh dưới đây để cài đặt <strong>minikube</strong>.</li>
+<li>Tại <strong>Cửa sổ lệnh Cloud9</strong>, thực thi câu lệnh dưới đây để cài đặt <strong>minikube</strong>.</li>
 </ol>
 <pre tabindex="0"><code>curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube &amp;&amp; rm minikube-linux-amd64
@@ -1428,6 +1457,22 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube &amp;&amp; rm minikube
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1469,19 +1514,19 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube &amp;&amp; rm minikube
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1714749797"></script>
-    <script src="/js/perfect-scrollbar.min.js?1714749797"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1714749797"></script>
-    <script src="/js/jquery.sticky.js?1714749797"></script>
-    <script src="/js/featherlight.min.js?1714749797"></script>
-    <script src="/js/highlight.pack.js?1714749797"></script>
+    <script src="/js/clipboard.min.js?1715600265"></script>
+    <script src="/js/perfect-scrollbar.min.js?1715600265"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1715600265"></script>
+    <script src="/js/jquery.sticky.js?1715600265"></script>
+    <script src="/js/featherlight.min.js?1715600265"></script>
+    <script src="/js/highlight.pack.js?1715600265"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1714749797"></script>
-    <script src="/js/learn.js?1714749797"></script>
-    <script src="/js/hugo-learn.js?1714749797"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1715600265"></script>
+    <script src="/js/learn.js?1715600265"></script>
+    <script src="/js/hugo-learn.js?1715600265"></script>
 
-    <link href="/mermaid/mermaid.css?1714749797" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1714749797"></script>
+    <link href="/mermaid/mermaid.css?1715600265" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1715600265"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

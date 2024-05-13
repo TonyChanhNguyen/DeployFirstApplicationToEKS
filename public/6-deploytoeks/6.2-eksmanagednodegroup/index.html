@@ -12,21 +12,21 @@
     <title>Deploy application to EKS Cluster Managed Nodegroup :: Deploy first application on EKS</title>
 
     
-    <link href="/css/nucleus.css?1714749797" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1714749797" rel="stylesheet">
-    <link href="/css/hybrid.css?1714749797" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1714749797" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1714749797" rel="stylesheet">
-    <link href="/css/auto-complete.css?1714749797" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1714749797" rel="stylesheet">
-    <link href="/css/theme.css?1714749797" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1714749797" rel="stylesheet">
+    <link href="/css/nucleus.css?1715600265" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1715600265" rel="stylesheet">
+    <link href="/css/hybrid.css?1715600265" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1715600265" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1715600265" rel="stylesheet">
+    <link href="/css/auto-complete.css?1715600265" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1715600265" rel="stylesheet">
+    <link href="/css/theme.css?1715600265" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1715600265" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1714749797" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1715600265" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1714749797"></script>
+    <script src="/js/jquery-3.3.1.min.js?1715600265"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1714749797"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1714749797"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1715600265"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1715600265"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1714749797"></script>
+<script type="text/javascript" src="/js/search.js?1715600265"></script>
 
     
   </div>
@@ -730,6 +730,34 @@
 
             
           
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/6-deploytoeks/6.3-eksfargate/" title="Deploy application to EKS Cluster Fargate" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/6-deploytoeks/6.3-eksfargate/">
+           <b> 6.3 </b> Deploy application to EKS Cluster Fargate
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
         
         </ul>
               
@@ -959,14 +987,9 @@
 <li><strong>kubelet</strong> – Makes sure that containers are healthy and running within their associated Pod.</li>
 <li><strong>kube-proxy</strong> – Maintains network rules that allow communication to your Pods.</li>
 </ul>
-<p>Your Amazon EKS cluster can schedule Pods on any combination of:</p>
 <ul>
-<li><strong>AWS Fargate</strong>: Fargate is a serverless compute engine for containers that eliminates the need to manage the underlying instances. With Fargate, you specify your application&rsquo;s resource needs, and AWS automatically provisions, scales, and maintains the infrastructure. This option is ideal for users who prioritize ease-of-use and want to concentrate on application development and deployment rather than managing infrastructure.</li>
-<li><strong>Karpenter</strong>: Karpenter is a flexible, high-performance Kubernetes cluster autoscaler that helps improve application availability and cluster efficiency. Karpenter launches right-sized compute resources in response to changing application load. This option can provision just-in-time compute resources that meet the requirements of your workload.</li>
 <li><strong>Managed node groups</strong>: Managed node groups are a blend of automation and customization for managing a collection of Amazon EC2 instances within an Amazon EKS cluster. AWS takes care of tasks like patching, updating, and scaling nodes, easing operational aspects. In parallel, custom kubelet arguments are supported, opening up possibilities for advanced CPU and memory management policies. Moreover, they enhance security via AWS Identity and Access Management (IAM) roles for service accounts, while curbing the need for separate permissions per cluster.</li>
-<li><strong>Self-managed nodes</strong>: Self-managed nodes offer full control over your Amazon EC2 instances within an Amazon EKS cluster. You are in charge of managing, scaling, and maintaining the nodes, giving you total control over the underlying infrastructure. This option is suitable for users who need granular control and customization of their nodes and are ready to invest time in managing and maintaining their infrastructure.cheduled on. Amazon EKS nodes run in your AWS account and connect to the control plane of your cluster through the cluster API server endpoint.</li>
 </ul>
-<p><strong>But in this workshop, we will only focus on deploying application to EKS Cluster Managed Nodegroup.</strong></p>
 <h3 id="create-eks-cluster">Create EKS Cluster</h3>
 <ol>
 <li>At Cloud9 terminal, execute command below to create EKS Cluster.</li>
@@ -991,7 +1014,7 @@
 <li>Let go to <a href="https://ap-southeast-1.console.aws.amazon.com/ec2/home?region=ap-southeast-1#Instances:instanceState=running;tag:alpha.eksctl.io/nodegroup-name=my-fcj-node;v=3;$case=tags:true%5C,client:false;$regex=tags:false%5C,client:false">EC2 Instance</a> to see the instance associated to Node Group.
 <img src="../../images/6.deployapptoeks/6.2.managednodegroup/6.2.5.managednodegroup.png?pc=90pt" alt="Amazon EKS Managed NodeGroup"></li>
 </ol>
-<p>There are 2 instances created (match with <strong>&ndash;nodes=2</strong> on <strong>eksctl command</strong>) with name is <strong>my-fcj-cluster-my-fcj-node-Node</strong> (format <!-- raw HTML omitted -->-<!-- raw HTML omitted -->-Node), type is <strong>t3.micro</strong> (match with <strong>&ndash;node-type=t3.micro</strong> on <strong>eksctl command</strong>) and Availability Zone is <strong>ap-southeast-1a</strong> and <strong>ap-southeast-1b</strong> (match with <strong>&ndash;zones=ap-southeast-1a,ap-southeast-1b</strong> on <strong>eksctl command</strong>).</p>
+<p>There are 2 instances created (match with <strong>&ndash;nodes=2</strong> on <strong>eksctl command</strong>) with name is <strong>my-fcj-cluster-my-fcj-node-Node</strong> (format <code>&lt;Cluster-Name&gt;-&lt;NodeGroup-Name&gt;-Node</code>), type is <strong>t3.micro</strong> (match with <strong>&ndash;node-type=t3.micro</strong> on <strong>eksctl command</strong>) and Availability Zone is <strong>ap-southeast-1a</strong> and <strong>ap-southeast-1b</strong> (match with <strong>&ndash;zones=ap-southeast-1a,ap-southeast-1b</strong> on <strong>eksctl command</strong>).</p>
 <h3 id="explore-eks-cluster">Explore EKS Cluster</h3>
 <ol>
 <li>
@@ -1039,6 +1062,16 @@
 </ol>
 <pre tabindex="0"><code>kubectl get all
 </code></pre><p><img src="../../images/6.deployapptoeks/6.2.managednodegroup/6.2.12.managednodegroup.png?pc=90pt" alt="Amazon EKS Managed NodeGroup"></p>
+<ol start="3">
+<li>Delete your node group.</li>
+</ol>
+<pre tabindex="0"><code>eksctl delete nodegroup --cluster my-fcj-cluster --name my-fcj-node --region ap-southeast-1 --drain=false
+</code></pre><p><img src="../../images/6.deployapptoeks/6.2.managednodegroup/6.2.13.managednodegroup.png?pc=90pt" alt="Amazon EKS Managed NodeGroup"></p>
+<ol start="4">
+<li>After about 10 minutes, list node on your cluster to confirm they are deleted.</li>
+</ol>
+<pre tabindex="0"><code>kubectl get node
+</code></pre><p><img src="../../images/6.deployapptoeks/6.2.managednodegroup/6.2.14.managednodegroup.png?pc=90pt" alt="Amazon EKS Managed NodeGroup"></p>
 
 
 
@@ -1441,9 +1474,6 @@
             
         
                     
-            
-        
-                    
                         
             
             
@@ -1451,6 +1481,25 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -1475,7 +1524,7 @@
 			<a class="nav nav-prev" href="/6-deploytoeks/6.1-installeks/" title="Install Amazon EKS"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/7-cleanup/" title="Cleanup resources" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/6-deploytoeks/6.3-eksfargate/" title="Deploy application to EKS Cluster Fargate" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1485,19 +1534,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1714749797"></script>
-    <script src="/js/perfect-scrollbar.min.js?1714749797"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1714749797"></script>
-    <script src="/js/jquery.sticky.js?1714749797"></script>
-    <script src="/js/featherlight.min.js?1714749797"></script>
-    <script src="/js/highlight.pack.js?1714749797"></script>
+    <script src="/js/clipboard.min.js?1715600265"></script>
+    <script src="/js/perfect-scrollbar.min.js?1715600265"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1715600265"></script>
+    <script src="/js/jquery.sticky.js?1715600265"></script>
+    <script src="/js/featherlight.min.js?1715600265"></script>
+    <script src="/js/highlight.pack.js?1715600265"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1714749797"></script>
-    <script src="/js/learn.js?1714749797"></script>
-    <script src="/js/hugo-learn.js?1714749797"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1715600265"></script>
+    <script src="/js/learn.js?1715600265"></script>
+    <script src="/js/hugo-learn.js?1715600265"></script>
 
-    <link href="/mermaid/mermaid.css?1714749797" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1714749797"></script>
+    <link href="/mermaid/mermaid.css?1715600265" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1715600265"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

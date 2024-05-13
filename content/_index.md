@@ -35,4 +35,5 @@ In this hands-on lab, we will learn fundamental knowledge and how can deploy a b
 6. [Deploy applicaiton with Amazon EKS](6-deploytoeks/)
     + 6.1 [Install eksclt](6-deploytoeks/6.1-installeks/)
     + 6.2 [Deploy application by EKS Cluster Managed nodegroup](6-deploytoeks/6.2-eksmanagednodegroup/)
+    + 6.3 [Deploy application by EKS Cluster Fargate Profile](6-deploytoeks/6.3-eksfargate/)
 7. [Cleanup resources](/7-cleanup/)

@@ -194,6 +194,8 @@
                 href="/vi/4-interactpcr/4.3-pullimagefromdockerhub/"
                 />
   </url><url>
+    <loc>/vi/6-deploytoeks/6.3-eksfargate/index/</loc>
+  </url><url>
     <loc>/vi/3-deployappwithdocker/</loc>
     <xhtml:link
                 rel="alternate"
